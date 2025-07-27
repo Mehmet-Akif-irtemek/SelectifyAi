@@ -1,17 +1,18 @@
+# IDE ve sistem dosyaları
 *.iml
-.gradle
-/local.properties
-/.idea/
-/build
-/captures
+.gradle/
+.local.properties
+.idea/
 .DS_Store
-.cxx
-.externalNativeBuild
 
-# Kodları gizle
-app/src/*
+# Derleme çıktıları
+/build/
+/captures/
+.cxx/
+.externalNativeBuild/
+
+app/src/**/*
 !app/src/main/assets/SelectifyAi-1.0.0.apk
-!sample_code/
+!sample_code/**
 
-# Anahtar dosyaları
-**/KeyDecryptor.java
+!**/KeyDecryptor.java

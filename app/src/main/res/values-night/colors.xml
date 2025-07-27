@@ -1,0 +1,17 @@
+<resources>
+    <color name="purple_200">#BB86FC</color>      <!-- Zaten gece temaya uygun -->
+    <color name="purple_500">#9C6BFF</color>      <!-- Açık mor -->
+    <color name="purple_700">#7E4DCC</color>      <!-- Hafif koyulaşmış -->
+    <color name="teal_200">#03DAC5</color>        <!-- Zaten geceye uygun -->
+    <color name="teal_700">#03B8A0</color>        <!-- Hafif açılmış versiyon -->
+    <color name="card">#1A1A1A
+    </color>
+
+    <color name="black">#000000</color>           <!-- Arka plan için -->
+    <color name="white">#FFFFFF</color>           <!-- Yazılar için -->
+    <color name="text2">#fff</color>
+<color name="text3">#000</color>
+    <!-- Özel renkler -->
+    <color name="butonmor">#9B7CFF</color>        <!-- Koyu fonda patlayan bir mor tonu -->
+    <color name="text">#A5B7FF</color>            <!-- Açık mavi ton (gece için ideal) -->
+</resources>

@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">SelectifyAI</string>
+
+    <!-- Login and Authentication -->
+    <string name="sign_in_button">Войти через Google</string>
+    <string name="sign_in_failed">Процесс входа был отменен.</string>
+    <string name="google_sign_in_failed">Ошибка входа через Google.</string>
+    <string name="firebase_auth_failed">Ошибка аутентификации Firebase.</string>
+    <string name="google_info_missing">Не удалось получить необходимую информацию Google.</string>
+    <string name="network_error">Пожалуйста, проверьте ваше интернет-соединение.</string>
+    <string name="signing_in">Вход в систему...</string>
+        <string name="prompt_choice_intro">Пожалуйста, выберите наиболее логичный вариант из следующих:</string>
+        <string name="prompt_choice_item_format">%1$d. %2$s</string>
+        <string name="prompt_choice_suffix">Дайте ответ в формате \'Ответ: [вариант]\' и затем укажите ваше обоснование.</string>
+
+        <string name="prompt_yesno_intro">Ответьте на следующий вопрос только \'Да\' или \'Нет\' и объясните почему:</string>
+        <string name="prompt_yesno_question">Вопрос: %1$s</string>
+        <string name="prompt_yesno_suffix">Ответ: [да/нет] Обоснование: [объяснение]</string>
+
+        <string name="prompt_emoji_intro">Ответьте эмодзи, которое лучше всего выражает настроение следующего предложения:</string>
+
+        <string name="system_message_template">Вы помощник по принятию решений SelectifyAI. При ответе учитывайте язык пользователя \"%1$s\", а также его возраст, местоположение, настроение и другие детали.</string>
+
+        <string name="api_url">https://api.groq.com/openai/v1/chat/completions</string>
+        <string name="api_model">moonshotai/kimi-k2-instruct</string>
+
+    <!-- Information -->
+    <string name="bilgilendirme1">Войдите в наше приложение и позвольте нам лучше узнать вас 😊 Имя, фото и адрес электронной почты вашей учетной записи будут отображаться только на экране вашего профиля.</string>
+    <string name="bilgilendirme2">Информация вашей учетной записи Google никогда не сохраняется и не передается третьим лицам.</string>
+
+    <!-- Onboarding -->
+    <string name="ilkekranaciklama">Перестаньте быть нерешительными. Быстро принимайте правильные решения с помощью предложений на основе ИИ. Если вы готовы, давайте начнем!</string>
+    <string name="ilkekranbuton">Сделайте свой выбор!</string>
+    <string name="buttonilerisecim">Далее</string>
+    <string name="secimsorumluluklar">Каковы ваши обязанности?</string>
+    <string name="secimlerkonum">Хотите ли вы предоставить разрешение на местоположение?</string>
+    <string name="secimlerkaçyaш">Сколько вам лет?</string>
+    <string name="yaskaç">Сколько вам лет?</string>
+    <string name="buttonizinver">Предоставить разрешение</string>
+    <string name="bunaneden">Зачем нам это нужно?</string>
+    <string name="aciklama1">Эта информация необходима для предоставления вам более логичных и подходящих результатов при общении с ИИ или бросании костей. Ваши данные будут безопасно переданы только в службы ИИ (API).</string>
+    <string name="aciklama2">Эта информация необходима для предоставления более логичных предложений. Хотя предоставление местоположения не является обязательным, если вы его предоставите, ваши решения будут намного более логичными.</string>
+    <string name="izin1">Нажимая \'Далее\', вы соглашаетесь на безопасную передачу ваших данных в службы ИИ.</string>
+    <string name="izin2">Нажимая галочку, вы соглашаетесь на безопасную передачу ваших данных в службы ИИ.</string>
+    <string name="mod">Какое у вас сегодня настроение?</string>
+
+    <!-- Main Screen -->
+    <string name="anaekran1">Что вы будете решать сегодня?</string>
+    <string name="edittextyazınız">Введите здесь...</string>
+    <string name="todo">Что вы будете делать сегодня?</string>
+    <string name="gorev">Новая задача...</string>
+
+    <!-- Dice Rolling -->
+    <string name="zar_at">Бросить кости</string>
+    <string name="Zarat">Случайный бросок костей</string>
+    <string name="Zara2t">Бросок костей с ИИ</string>
+    <string name="secenek_modu">Выбор опций</string>
+    <string name="evet_hayir_modu">Да/Нет</string>
+    <string name="secenek1_hint">Опция 1 (напр. Игра)</string>
+    <string name="secenek2_hint">Опция 2 (напр. Учеба)</string>
+    <string name="soru_hint">Напишите ваш вопрос</string>
+    <string name="sonuc">Результат</string>
+    <string name="secim">Выбор: %1$s</string>
+    <string name="evet">Да</string>
+    <string name="hayir">Нет</string>
+    <string name="iki_secenek_gir">Обе опции должны быть введены!</string>
+    <string name="soru_gir">Вы должны написать вопрос!</string>
+    <string name="zarsayfa3">Система костей на основе ИИ направлена на предоставление наиболее логичного варианта путем анализа такой информации, как возраст, настроение, местоположение, обязанности и погода. Однако данные решения носят консультативный характер, и окончательная ответственность лежит на пользователе.</string>
+    <string name="en_az_iki_secenek">Требуется минимум 2 опции!</string>
+    <string name="lutfen_soru_gir">Пожалуйста, введите вопрос</string>
+    <string name="konum_alinamadi">Не удалось получить местоположение</string>
+    <string name="konum_alinamadi_detay">Ошибка местоположения: %1$s</string>
+    <string name="konum_izni_verilmedi">Разрешение на местоположение не предоставлено.</string>
+    <string name="konum_izni_gerekli">Требуется разрешение на местоположение.</string>
+    <string name="kullanici_verileri_alinamadi">Не удалось получить данные пользователя</string>
+    <string name="veri_islenemedi">Данные не могут быть обработаны.</string>
+    <string name="baglanti_hatasi">Ошибка соединения.</string>
+    <string name="yer_gosteriliyor">Показано %1$d мест (ближайшие).</string>
+    <string name="hosgeldin_kullanici">Добро пожаловать %1$s</string>
+    <string name="mod_kaydedildi">Ваше настроение сохранено: %1$s</string>
+    <string name="kayit_basarisiz">Ошибка сохранения</string>
+    <string name="hava_durumu_alinamadi">Не удалось получить информацию о погоде</string>
+    <string name="konum_ornek">Местоположение: %1$s/%2$s</string>
+    <string name="hava_durumu_ornek">%1$s: %2$s - %3$.1f°C</string>
+    <string name="ai_cevap_alinamadi">Не удалось получить ответ ИИ</string>
+    <string name="ai_hatasi">Ошибка ИИ</string>
+    <string name="ai_prompt_evethayir">Дайте короткий и логичный ответ на вопрос. Не отвечайте просто \"Да\" или \"Нет\", дайте прямой совет.\nНапример:\n- \"Стоит ли мне выйти?\" ➝ \"Выходи\" или \"Не выходи\"\n- \"Стоит ли мне учиться?\" ➝ \"Учись\" или \"Отдохни немного\"\n\nУчитывайте возраст, настроение, обязанности и погоду пользователя, но не преувеличивайте обязанности. Используйте сбалансированный и поддерживающий тон. Не объясняйте, просто напишите предложение.</string>
+
+    <!-- AI Prompts -->
+    <string name="ai_system_prompt">Предложите логичное, но сбалансированное решение, учитывая возраст, настроение, погоду и обязанности пользователя. Не создавайте ненужного давления. Говорите по-русски. Дайте только короткое и ясное предложение.</string>
+    <string name="ai_prompt_secim">Ниже приведены варианты, предоставленные пользователем.\nПожалуйста, выберите только один из этих вариантов, наиболее подходящий для пользователя.\n\nПри выборе учитывайте возраст, настроение, обязанности и погоду пользователя, но не преувеличивайте обязанности.\nНе переписывайте, не сортируйте и не объясняйте варианты.\n\nПросто напишите четкий выбор одним словом или короткой фразой. Не объясняйте.</string>
+
+    <!-- Menu -->
+    <string name="anasayfa">Главная</string>
+    <string name="profil">Профиль</string>
+    <string name="zaratma">Бросить кости!</string>
+    <string name="ayarlar">Настройки</string>
+    <string name="cıkıs">Выйти</string>
+
+    <!-- Dice explanation -->
+    <string name="zarsayfa1">Как это работает?</string>
+    <string name="zarsayfa2">Случайный бросок костей полностью основан на случайности и не содержит никакой логики или этических ценностей. Поэтому приложение не может нести ответственность за полученные решения.</string>
+
+    <!-- Options -->
+    <string name="ilk_secenek">Опция 1</string>
+    <string name="ikinci_secenek">Опция 2</string>
+    <string name="secenek_ekle">+ Добавить опцию</string>
+    <string name="secenek">Опция</string>
+    <string name="secenek_n_hint">Опция %1$d</string>
+    <string name="max_6_secenek">Вы можете добавить до 6 опций!</string>
+    <string name="en_fazla_6_secenek">Вы можете добавить до 6 опций!</string>
+    <string name="birinci_secenek">Опция 1</string>
+    <string name="ai_prompt_kullanici_bilgi">Имя пользователя: %1$s\nВозраст: %2$d\nОбязанности: %3$s\nСегодняшнее настроение: %4$s\nПогода: %5$s\nОпции:\n%6$s%7$s</string>
+    <string name="ai_prompt_evet_hayir">Дайте логичный и короткий ответ на вопрос. Если вопрос в форме \"... стоит ли мне / ... должен ли я\", отвечайте прямо действием вместо просто \"Да\" или \"Нет\". Например:\n- \"Стоит ли мне выйти?\" ➝ \"Выходи\" или \"Не выходи\"\n- \"Стоит ли мне учиться?\" ➝ \"Учись\" или \"Не учись\"\n\nТакже учитывайте возраст, настроение, обязанности и погоду пользователя. Говорите по-русски. Просто напишите слово решения. Не объясняйте.</string>
+    <string name="ai_cevabi_alinamadi">Не удалось получить ответ ИИ</string>
+
+    <!-- Profile -->
+    <string name="profil_guncellendi">Профиль обновлен</string>
+    <string name="fotograf_buyuk">Фото не может быть больше 2МБ!</string>
+    <string name="fotograf_limit">Вы можете менять фото максимум 3 раза в день.</string>
+    <string name="fotograf_islenemedi">Не удалось обработать фото: %1$s</string>
+    <string name="mevcut_ad">Текущее имя: %1$s</string>
+    <string name="mevcut_sorumluluk">Текущая обязанность: %1$s</string>
+
+    <!-- General -->
+    <string name="kedi">Google Maps не установлен</string>
+    <string name="vazgeç">Отмена</string>
+    <string name="hata">Ошибка</string>
+    <string name="dene">Попробовать снова</string>
+    <string name="x">Ошибка сохранения профиля. Хотите попробовать снова?</string>
+
+    <!-- Cards -->
+    <string name="card1">Места, которые вы можете посетить!</string>
+    <string name="card2">Погода</string>
+    <string name="card11">xxxxxxxxxxxx</string>
+
+    <!-- Categories -->
+    <string name="katagoriler">Рестораны</string>
+    <string name="katagoriler1">Рабочие места</string>
+    <string name="katagoriler2">Торговые центры</string>
+
+    <!-- Navigation -->
+    <string name="navigation_drawer_open">Открыть меню</string>
+    <string name="navigation_drawer_close">Закрыть меню</string>
+    <string name="location_prompt">Места для исследования рядом с %1$s ждут вас</string>
+
+    <!-- Firebase Config -->
+    <string name="default_web_client_id">187855956634-oejedr4qh3kkns0dbssn9nsfm5qv1v9m.apps.googleusercontent.com</string>
+    <string name="kullanici_adi">Имя пользователя</string>
+    <string name="profil_fotografi_sec">Выбрать фото профиля</string>
+    <string name="kaydet">Сохранить</string>
+    <string name="yeni_ad_hint">Введите ваше новое имя</string>
+    <string name="yeni_sorumluluk_hint">Введите вашу новую обязанность</string>
+
+    <!-- Extras -->
+    <string name="yer_adi">Название места</string>
+    <string name="tur">Тип: </string>
+    <string name="selectifyai">SelectifyAI</string>
+    <string name="hosgeldin">Добро пожаловать</string>
+    <string name="hava_durumu_yukleniyor">Загрузка погоды...</string>
+    <string name="uygulama_nasil_kullanmak">Как вы хотите использовать приложение</string>
+    <string name="secenek_modu_text">Режим опций</string>
+    <string name="evet_hayir_modu_text">Режим Да/Нет</string>
+    <string name="ai_ile_zar_at">Бросить кости с ИИ</string>
+    <string name="ai_yanit_burada">Ответ ИИ появится здесь</string>
+
+    <!-- Notification Channel -->
+    <string name="mod_channel_id">mod_channel</string>
+    <string name="mod_channel_name">Канал уведомлений о настроении</string>
+    <string name="mod_notification_title">Поделитесь с нами своим настроением 🌤️</string>
+    <string name="mod_notification_text">Хотите выразить свое сегодняшнее настроение эмодзи?</string>
+
+    <!-- Type/Distance -->
+    <string name="tur_mesafe">Тип: %1$s%2$s</string>
+    <string name="mesafe_ek"> - %1$d м</string>
+    <string name="tamam">ОК</string>
+
+    <!-- Bottom Navigation -->
+    <string name="bottom_nav_home">Главная</string>
+    <string name="bottom_nav_tasks">Задачи</string>
+    <string name="bottom_nav_settings">Профиль</string>
+
+    <!-- Settings Screen -->
+    <string name="logout_success">Выход выполнен</string>
+    <string name="language_turkish">Türkçe</string>
+    <string name="language_english">English</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_french">Français</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_chinese">中文</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_hindi">हिन्दी</string>
+
+    <!-- Layout Texts -->
+    <string name="dice_question_hint">Напишите, о чем вы не можете решить...</string>
+    <string name="theme_label">Тема</string>
+    <string name="language_selection_label">Выбор языка</string>
+    <string name="logout_button">Выйти</string>
+
+    <!-- AnaEkran Texts -->
+    <string name="weather_indoor_restaurant">Рекомендуются закрытые рестораны из-за погоды/настроения.</string>
+    <string name="weather_indoor_workspace">Рекомендуются библиотека или коворкинг-пространства из-за погоды/настроения.</string>
+    <string name="weather_indoor_shopping">Рекомендуются торговые центры из-за погоды/настроения.</string>
+    <string name="weather_nearby_places">Рекомендуются близлежащие места.</string>
+    <string name="outdoor_cafes_suggestion">Рекомендуются кафе на открытом воздухе.</string>
+    <string name="google_places_error">Ошибка Google Places: %1$s</string>
+    <string name="user_data_missing">Нет данных пользователя.</string>
+    <string name="user_info_fetch_failed">Не удалось получить информацию о пользователе.</string>
+    <string name="unknown_place">Неизвестно</string>
+    <string name="unknown_type">неизвестно</string>
+    <string name="restaurant_keyword">ресторан</string>
+    <string name="library_keyword">библиотека</string>
+    <string name="shopping_keyword">покупки</string>
+    <string name="place_keyword">место</string>
+    <string name="a_k">Светлая</string>
+    <string name="koyu">Темная</string>
+
+    <!-- Task Strings -->
+    <string name="add_task">Добавить задачу</string>
+    <string name="todo_title">Задачи</string>
+    <string name="todo_add_hint">Добавить задачу...</string>
+    <string name="todo_add_button">Добавить</string>
+    <string name="todo_priority_label">Уровень приоритета</string>
+    <string name="todo_total_count">Всего задач: %1$d</string>
+    <string name="todo_no_tasks">Нет задач для выполнения 🎉</string>
+    <string name="todo_delete_content_desc">Удалить</string>
+    <string-array name="priority_array">
+        <item>Высокий</item>
+        <item>Средний</item>
+        <item>Низкий</item>
+    </string-array>
+
+    <!-- ZarAi Activity Strings -->
+    <string name="kalan_hak_placeholder">Оставшиеся права: 10</string>
+    <string name="kalan_hak_format">Оставшиеся права: %1$d</string>
+    <string name="kalan_hak_giris_yapin">Оставшиеся права: Пожалуйста, войдите</string>
+    <string name="lutfen_once_giris_yapin">Пожалуйста, сначала войдите</string>
+    <string name="hak_kontrolu_yapilamadi">Не удалось выполнить проверку прав</string>
+    <string name="ek_hak_kazandin">Вы заработали %1$d дополнительных прав!</string>
+    <string name="reklam_yuklenemedi">Не удалось загрузить рекламу: %1$s</string>
+    <string name="reklam_gosterilemedi">Не удалось показать рекламу: %1$s</string>
+    <string name="reklam_yukleniyor_bekleyin">Реклама загружается, пожалуйста, подождите...</string>
+    <string name="secilen_format">Выбрано: %1$s</string>
+    <string name="konum_izni_gerekli_toast">Требуется разрешение на местоположение</string>
+    <string name="reklam_izle">Смотреть рекламу</string>
+    <string name="premiuma_gec">Перейти на Премиум</string>
+    <string name="hak_bitti_mesaj">Ежедневные права исчерпаны</string>
+    <string name="reklam_izle_ek_hak">Смотреть рекламу (+2 права)</string>
+
+    <!-- New Prompt Strings -->
+    <string name="hint_type_message1">Введите ваше сообщение...</string>
+    <string name="button_send1">Отправить</string>
+    <string name="delete_day1">Удалить этот день</string>
+    <string name="ai_prompt_secim1">Вы ИИ-помощник для чата. Вы говорите с пользователями на повседневные темы. Ваши ответы должны быть естественными, короткими и искренними. Вы можете шутить и давать предложения. Информация о возрасте, настроении или обязанностях пользователя должна использоваться кратко только тогда, когда это действительно необходимо и в подходящем контексте. Не напоминайте особенно об обязанностях повторно или не используйте их в консультативной манере. Пишите по-русски и не говорите как робот.</string>
+    <string name="ai_prompt_evet_hayir1">Вы ИИ-помощник для чата. Вы даете пользователям ответы да-нет, но также можете добавить короткую причину при необходимости. Ваши ответы должны быть естественными, искренними и теплыми. Если информация о пользователе (возраст, настроение, ответственность и т.д.) очень уместна, вы можете вежливо упомянуть ее, но не напоминайте особенно об обязанностях повторно или не используйте их в давящей манере. Говорите по-русски и не будьте как робот.</string>
+    <string name="ai_system_prompt1">Вы ИИ, который общается с пользователями на искреннем, естественном и понятном русском языке. Вы можете шутить, проявлять эмпатию при необходимости и давать предложения. Используйте информацию о пользователе только при необходимости, уместно и однократно. Вместо постоянного повторения и напоминания об обязанностях, поддерживайте беседу плавной и приятной. Не говорите как робот.</string>
+
+    <!-- AI Chat Activity Strings -->
+    <string name="ai_chat_title">ИИ Чат</string>
+    <string name="ai_typing">ИИ печатает...</string>
+    <string name="chat_cleared">История чата очищена</string>
+    <string name="menu_previous_messages">Предыдущие сообщения</string>
+    <string name="menu_new_message">Новое сообщение</string>
+    <string name="menu_clear_chat">Очистить чат</string>
+    <string name="menu_settings">Настройки</string>
+
+    <!-- Hardcode Text Translations -->
+    <string name="sohbet_gecmisi">История чата</string>
+    <string name="kullanici_mesaji_placeholder">Сообщение пользователя появится здесь</string>
+    <string name="ai_yaniti_placeholder">Ответ ИИ появится здесь</string>
+    <string name="gunluk_hak_bitti">Ежедневные права исчерпаны</string>
+    <string name="reklam_izle_hak">Смотреть рекламу (+2 права)</string>
+    <string name="premiuma_gec_text">Перейти на Премиум</string>
+    <string name="hava_durumu_alinamadi_toast">Не удалось получить погоду</string>
+    <string name="ai_format_hatasi">Ошибка формата ИИ</string>
+    <string name="tum_mesajlari_sil">Удалить все сообщения</string>
+    <string name="bos_baslik">(Пустой заголовок)</string>
+    <string name="tum_mesajlari_sil_baslik">Удалить все сообщения</string>
+    <string name="tum_mesajlari_sil_mesaj">Вы уверены, что хотите удалить все сообщения в этом чате?</string>
+    <string name="evet_button">Да</string>
+    <string name="hayir_button">Нет</string>
+    <string name="tum_mesajlar_silindi">Все сообщения удалены</string>
+    <string name="mesaji_sil">Удалить сообщение</string>
+    <string name="mesaji_sil_onay">Вы уверены, что хотите удалить это сообщение?</string>
+    <string name="bilinmiyor">Неизвестно</string>
+    <string name="belirtilmemis">Не указано</string>
+    <string name="kullanici_bilgisi_alinamadi">Не удалось получить информацию о пользователе.</string>
+    <string name="bilinmiyor_kisa">неизвестно</string>
+    <string name="soru_prefix">Вопрос: </string>
+    <string name="gunluk_groq_limit_doldu">Ежедневный лимит Groq исчерпан (50).</string>
+    <string name="groq_hatasi">Ошибка Groq: %1$s</string>
+    <string name="veri_ayristairilamadi">Данные не удалось разобрать.</string>
+    <string name="google_places_hatasi_toast">Ошибка Google Places: %1$s</string>
+    <string name="chatler_yuklenemedi">Не удалось загрузить чаты</string>
+    <string name="uzgun_mod">грустный</string>
+    <string name="yagmur_keyword">дождь</string>
+    <string name="kar_keyword">снег</string>
+    <string name="sohbeti_sil">Удалить чат</string>
+    <string name="sohbeti_sil_onay">чат вы хотите удалить?</string>
+
+    <!-- Log Messages -->
+    <string name="admob_baslatiliyor">AdMob инициализируется...</string>
+    <string name="admob_baslatildi">AdMob инициализирован: %1$s</string>
+    <string name="kullanici_oturum_acmamis">Пользователь не вошел в систему</string>
+    <string name="hak_bitti_reklam_panel">Права исчерпаны, показывается панель рекламы/премиум</string>
+    <string name="hak_kontrolu_hatasi">Ошибка проверки прав: %1$s</string>
+    <string name="ek_hak_eklendi">Дополнительные права добавлены: +%1$d, всего: %2$d</string>
+    <string name="hak_ekleme_hatasi">Ошибка добавления прав: %1$s</string>
+    <string name="hak_gosterme_hatasi">Ошибка отображения прав: %1$s</string>
+    <string name="kalan_hak_log">Оставшиеся права: %1$d</string>
+    <string name="admob_henuz_baslatilmadi">AdMob еще не инициализирован</string>
+    <string name="reklam_zaten_yukleniyor_log">Реклама уже загружается или готова</string>
+    <string name="rewarded_ad_yukleniyor_log">Загружается реклама с вознаграждением...</string>
+    <string name="rewarded_ad_basariyla_yuklendi_log">Реклама с вознаграждением успешно загружена</string>
+    <string name="rewarded_ad_yukleme_hatasi_log">Ошибка загрузки рекламы с вознаграждением: %1$s</string>
+    <string name="hata_kodu_log">Код ошибки: %1$d</string>
+    <string name="hata_mesaji_log">Сообщение об ошибке: %1$s</string>
+    <string name="rewarded_ad_gosteriliyor_log">Показывается реклама с вознаграждением</string>
+    <string name="reklam_tiklandi_log">Реклама нажата</string>
+    <string name="reklam_kapatildi_log">Реклама закрыта</string>
+    <string name="reklam_gosterme_hatasi_log_msg">Ошибка показа рекламы: %1$s</string>
+    <string name="reklam_gosterildi_log">Реклама показана</string>
+    <string name="reklam_tam_ekrанда_gosterildi_log">Реклама показана в полноэкранном режиме</string>
+    <string name="kullanici_odul_kazandi_log">Пользователь получил награду: %1$d %2$s</string>
+    <string name="reklam_henuz_hazir_degil_log">Реклама еще не готова</string>
+    <string name="konum_izni_verildi_log">Разрешение на местоположение предоставлено</string>
+    <string name="konum_izni_reddedildi_log">Разрешение на местоположение отклонено</string>
+
+    <!-- Missing strings from Turkish version -->
+    <string name="gunaydin">Доброе утро, %1$s 👋</string>
+    <string name="tunaydin">Добрый день, %1$s 👋</string>
+    <string name="iyi_aksamlar">Добрый вечер, %1$s 👋</string>
+    <string name="iyi_geceler">Спокойной ночи, %1$s 👋</string>
+    <string name="chats">Чаты</string>
+    <string name="plan_free_features">
+    • 1 бросок костей с ИИ в день\n\n• 3 права на чат с ИИ\n\n• 1 предложение места с ИИ
+</string>
+    <string name="plan_premium_features">
+    • 30 бросков костей с ИИ в день\n\n• 50 прав на чат с ИИ\n\n• Неограниченные предложения мест с ИИ
+</string>
+    <string name="plan_pro_features">
+    • Неограниченные броски костей с ИИ\n\n• Неограниченный чат с ИИ\n\n• Неограниченные предложения мест с ИИ\n\n• Приоритетная служба поддержки
+</string>
+    <string name="reklam_zaten_yukleniyor">Реклама уже загружается или готова</string>
+    <string name="rewarded_ad_yukleniyor">Загружается реклама с вознаграждением...</string>
+    <string name="rewarded_ad_basariyla_yuklendi">Реклама с вознаграждением успешно загружена</string>
+    <string name="rewarded_ad_yukleme_hatasi">Ошибка загрузки рекламы с вознаграждением: %1$s</string>
+    <string name="hata_kodu">Код ошибки: %1$d</string>
+    <string name="hata_mesaji">Сообщение об ошибке: %1$s</string>
+    <string name="rewarded_ad_gosteriliyor">Показывается реклама с вознаграждением</string>
+    <string name="reklam_tiklandi">Реклама нажата</string>
+    <string name="reklam_kapatildi">Реклама закрыта</string>
+    <string name="reklam_gosterme_hatasi_log">Ошибка показа рекламы: %1$s</string>
+    <string name="reklam_gosterildi">Реклама показана</string>
+    <string name="reklam_tam_ekrанда_gosterildi">Реклама показана в полноэкранном режиме</string>
+    <string name="kullanici_odul_kazandi">Пользователь получил награду: %1$d %2$s</string>
+    <string name="reklam_henuz_hazir_degil">Реклама еще не готова</string>
+    <string name="konum_izni_verildi">Разрешение на местоположение предоставлено</string>
+    <string name="konum_izni_reddedildi">Разрешение на местоположение отклонено</string>
+    <string name="hak_sayisi">Количество Прав\n</string>
+    <string name="purchase_coming_soon">Скоро</string>
+
+    <!-- Hardcoded strings from Java files -->
+    <string name="google_ile_giris_basarisiz">Ошибка входа через Google.</string>
+    <string name="internet_baglantisi_yok">Нет интернет-соединения.</string>
+    <string name="google_hesabi_bilgileri_eksik">Информация аккаунта Google неполная.</string>
+    <string name="firebase_kimlik_dogrulama_basarisiz">Ошибка аутентификации Firebase.</string>
+    <string name="kullanici_bilgileri_kontrol_edilemedi">Не удалось проверить информацию пользователя.</string>
+    <string name="kullanicilar_koleksiyonu">пользователи</string>
+    <string name="onboarding_prefs">onboarding_prefs</string>
+    <string name="onboarding_tamamlandi">onboarding_завершен</string>
+    <string name="uid">uid</string>
+    <string name="eposta">email</string>
+    <string name="kullanici_adi_field">имя_пользователя</string>
+    <string name="kayit_tarihi">дата_регистрации</string>
+    <string name="profil_foto_url">url_фото_профиля</string>
+    <string name="onboarding_tamamlandi_field">onboardingTamamlandi</string>
+    <string name="kalan">остается</string>
+    <string name="zar_hakki">права_костей</string>
+    <string name="groq_limit">groq_limit</string>
+    <string name="count">счетчик</string>
+    <string name="premium">premium</string>
+    <string name="chats_collection">chats</string>
+    <string name="messages_collection">сообщения</string>
+    <string name="message_field">сообщение</string>
+    <string name="is_user_field">этоПользователь</string>
+    <string name="timestamp_field">временная_метка</string>
+    <string name="first_message_field">первоеСообщение</string>
+    <string name="ayarlar_prefs">настройки</string>
+    <string name="koyu_mod">темный_режим</string>
+    <string name="dil">язык</string>
+    
+    <!-- Additional hardcoded strings -->
+    <string name="kullanici_kontrol_hatasi">Ошибка проверки пользователя</string>
+    <string name="kimlik_dogrulamada_hata">Ошибка аутентификации</string>
+    <string name="meta_llama_model">meta-llama/moonshotai/kimi-k2-instruct</string>
+    <string name="system_role">система</string>
+    <string name="user_role">пользователь</string>
+    <string name="content_field">содержание</string>
+    <string name="role_field">роль</string>
+    <string name="messages_field">сообщения</string>
+    <string name="model_field">модель</string>
+    <string name="temperature_field">температура</string>
+    <string name="top_p_field">top_p</string>
+    <string name="choices_field">выборы</string>
+    <string name="message_response_field">сообщение</string>
+    <string name="groq_api_url">https://api.groq.com/openai/v1/chat/completions</string>
+    <string name="authorization_header">Authorization</string>
+    <string name="bearer_prefix">Bearer </string>
+    <string name="content_type_header">Content-Type</string>
+    <string name="application_json">application/json</string>
+    <string name="post_method">POST</string>
+    <string name="get_method">GET</string>
+    <string name="weather_api_url_template">https://api.openweathermap.org/data/2.5/weather?lat=%f&amp;lon=%f&amp;appid=%s&amp;units=metric&amp;lang=tr</string>
+    <string name="main_weather_field">main</string>
+    <string name="temp_field">temp</string>
+    <string name="weather_array_field">погода</string>
+    <string name="think_tag">&lt;think&gt;</string>
+    
+    <!-- ZarAiActivity hardcoded strings -->
+    <string name="test_ad_unit_id">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="real_ad_unit_id">ca-app-pub-4497036434463360/9909505336</string>
+    <string name="zar_ai_activity_tag">ZarAiActivity</string>
+    <string name="kullanicilar">kullanicilar</string>
+    <string name="zar_hakki_collection">zar_hakki</string>
+    <string name="groq_limit_collection">groq_limit</string>
+    <string name="yyyy_mm_dd_format">yyyyMMdd</string>
+    <string name="hh_mm_format">HH:mm</string>
+    <string name="dice_image_prefix">dice_</string>
+    <string name="drawable_package">drawable</string>
+    <string name="onboarding_tamamlandi_boolean">onboardingTamamlandi</string>
+    
+    <!-- AiChatActivity hardcoded strings -->
+    <string name="main_field">main</string>
+    <string name="weather_field">погода</string>
+    <string name="description_field">описание</string>
+    <string name="kullanici_adi_firestore">kullaniciAdi</string>
+    <string name="yas_field">yas</string>
+    <string name="sorumluluk_field">sorumluluk</string>
+    <string name="user_info_format">\\nПользователь: %s\\nВозраст: %d\\nОтветственность: %s\\nМестоположение: %s/%s\\nПогода: %s, %.1f°C</string>
+    <string name="user_info_no_data_format">\\n%s\\nМестоположение: %s/%s\\nПогода: %s, %.1f°C</string>
+    <string name="question_mark">?</string>
+    <string name="slash">/</string>
+    <string name="menu_group_chats">1001</string>
+    <string name="empty_string"></string>
+    <string name="user_not_authenticated">Пользователь не аутентифицирован</string>
+    <string name="no_rights_remaining">Прав не осталось</string>
+    <string name="error_message_prefix">Ошибка: </string>
+    <string name="user_data_could_not_be_retrieved">Не удалось получить данные пользователя.</string>
+    <string name="data_could_not_be_parsed">Не удалось разобрать данные.</string>
+    <string name="premium_plan">Премиум План</string>
+    <string name="lk_ay_bedava">Первый месяц бесплатно!</string>
+    <string name="_29_99_tl_ay">29,99 TL / Месяц</string>
+    <string name="sat_n_al">Купить</string>
+    <string name="cretsiz_plan">Бесплатный План</string>
+    <string name="_79_99_tl_ay">79,99 TL / Месяц</string>
+    <string name="pro_plan">Про План</string>
+    <string name="reklam_hazir_degil">Реклама еще не готова, попробуйте снова.</string>
+    <string name="haklar_tukendi">Ваши бесплатные права на сегодня исчерпаны.</string>
+    <string name="hak_bilgisi_alinamadi">Не удалось получить информацию о правах.</string>
+    <string name="groq_limiti_kontrol_edilemedi">Не удалось проверить лимит Groq.</string>
+    <string name="pro">Про</string>
+    <string name="free">Бесплатно</string>
+
+    <!-- Todo Search and Filter Strings -->
+    <string name="search_task_hint">Поиск задач...</string>
+    <string name="filter_all">Все</string>
+    <string name="filter_pending">Ожидающие</string>
+    <string name="filter_completed">Завершенные</string>
+    <string name="category_general">Общие</string>
+    <string name="category_work">Работа</string>
+    <string name="category_personal">Личные</string>
+    <string name="category_shopping">Покупки</string>
+    <string name="category_health">Здоровье</string>
+    <string name="category_education">Образование</string>
+    <string name="category_label">Категория</string>
+    <string name="description_label">Описание (Необязательно)</string>
+    <string name="description_hint">Описание задачи...</string>
+    <string name="task_deleted">Задача удалена</string>
+    <string name="undo">Отменить</string>
+    <string name="add_button_desc">Добавить</string>
+    <string name="delete_button_desc">Удалить</string>
+    <string name="notification_channel_name">Уведомления о задачах</string>
+    <string name="notification_channel_desc">Уведомления о незавершенных задачах</string>
+    <string name="notification_permission_granted">Разрешение на уведомления предоставлено</string>
+    <string name="notification_permission_denied">Разрешение на уведомления отклонено, напоминания могут не работать</string>
+    <string name="priority_high_key">высокий</string>
+    <string name="priority_medium_key">средний</string>
+    <string name="priority_low_key">низкий</string>
+
+    <string name="notification_time">Время уведомления</string>
+    <string name="pick_time">Выбрать время</string>
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранить</string>
+    <string name="high">Высокий</string>
+    <string name="medium">Средний</string>
+    <string name="low">Низкий</string>
+    <string name="ai_error_code">Error</string>
+    <string name="gerek_eyi_g_ster">Показать причину</string>
+    <string name="arkada_n_davet_et">Пригласить друга</string>
+    <string name="paylas">Поделиться</string>
+</resources>

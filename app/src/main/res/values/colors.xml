@@ -1,0 +1,37 @@
+<resources>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+<color name="card">#ffff</color>
+    <color name="priority_red">#FF6B6B</color>
+    <color name="priority_orange">#FFA726</color>
+    <color name="priority_green">#66BB6A</color>
+    <color name="priority_default">#FFFFFF</color>
+    <!-- Özel -->
+<color name="xx">#4C7ABA</color>
+    <color name="switch_thumb">#FFFFFF</color>
+    <color name="switch_track">#673AB7</color> <!-- Mor track -->
+   <color name="x">#345480</color>
+    <color name="text2">#000</color>
+    <color name="text3">#fff</color>
+    <color name="butonmor">#6650C9</color>
+    <color name="text">#314ACE</color>
+    <color name="premiumGold">#FFD700</color>
+    <color name="premiumIcon">#FFC107</color>
+    <color name="premiumTitle">#B8860B</color>
+    <color name="premiumText">#7C6F57</color>
+    <color name="premiumPrice">#B8860B</color>
+    <color name="proPurple">#7B1FA2</color>
+    <color name="proIcon">#9575CD</color>
+    <color name="proTitle">#4A148C</color>
+    <color name="proText">#5E35B1</color>
+    <color name="proPrice">#4A148C</color>
+    <color name="freeBlue">#42A5F5</color>
+    <color name="freeIcon">#29B6F6</color>
+    <color name="freeTitle">#1565C0</color>
+    <color name="freeText">#1976D2</color>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "187855956634",
+    "project_id": "selectifyai-51371",
+    "storage_bucket": "selectifyai-51371.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187855956634:android:9e1556c79977a047e30d23",
+        "android_client_info": {
+          "package_name": "com.app.selectifyai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187855956634-elfp7cqkrd4o6a7gto2v1pgemr365bak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.selectifyai",
+            "certificate_hash": "df19db381667f956dc5eef97e9b13a3b7eb891a5"
+          }
+        },
+        {
+          "client_id": "187855956634-oejedr4qh3kkns0dbssn9nsfm5qv1v9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlPlvPXhYSUmEuVaKpfm1FtQHUUB3zw_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187855956634-oejedr4qh3kkns0dbssn9nsfm5qv1v9m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

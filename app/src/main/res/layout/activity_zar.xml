@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/zarEkrani"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text3">
+
+    <!-- Ana ScrollView -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="96dp">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="38dp" />
+
+            <!-- Mod Seçici -->
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/bf4"
+                android:text="@string/app_name"
+                android:textColor="@color/text2"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/modeRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/secenekMode"
+                        android:layout_width="144dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/buttonai"
+                        android:backgroundTint="#34537F"
+                        android:buttonTint="@color/white"
+                        android:fontFamily="@font/bf3"
+                        android:text="@string/secenek_modu"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/evetHayirMode"
+                        android:layout_width="112dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/buttonai"
+                        android:backgroundTint="#4C7ABA"
+                        android:buttonTint="@color/white"
+                        android:fontFamily="@font/bf10"
+                        android:text="@string/evet_hayir_modu"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Seçenek Paneli -->
+            <LinearLayout
+                android:id="@+id/secenekPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/button1"
+                android:backgroundTint="@color/text3"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:id="@+id/secenekContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <!-- Evet/Hayır Paneli -->
+            <LinearLayout
+                android:id="@+id/evetHayirPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/button1"
+                android:backgroundTint="@color/text3"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/soruEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button1"
+                    android:backgroundTint="@color/x"
+                    android:fontFamily="@font/bf5"
+                    android:hint="@string/soru_hint"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </LinearLayout>
+
+            <!-- Zar Animasyonu -->
+
+            <!-- Zar At Butonu -->
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/zarAnim"
+                android:layout_width="300dp"
+                android:layout_height="214dp"
+                android:layout_marginTop="10dp"
+                app:lottie_autoPlay="false"
+                app:lottie_fileName="dice.json"
+                app:lottie_loop="false" />
+
+            <Button
+                android:id="@+id/zarAtButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button1"
+                android:backgroundTint="#284163"
+                android:fontFamily="@font/bf1"
+                android:text="@string/zar_at"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ppsbold"
+                android:text="@string/zarsayfa1"
+                android:textAlignment="center"
+                android:textColor="@color/text2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/ppsmediumitalic"
+                android:text="@string/zarsayfa2"
+                android:textAlignment="center"
+                android:textColor="@color/text2" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Reklam Paneli -->
+    <LinearLayout
+        android:id="@+id/reklamPaneli"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button1"
+        android:backgroundTint="@color/text2"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/bf4"
+            android:text="@string/gunluk_hak_bitti"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnReklamIzle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/button1"
+            android:backgroundTint="@color/x"
+            android:fontFamily="@font/bf1"
+            android:text="@string/reklam_izle_hak"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnPremium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1"
+            android:backgroundTint="@color/x"
+            android:fontFamily="@font/bf1"
+            android:text="Premium’a Geç"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Arka Plan Karartması -->
+    <View
+        android:id="@+id/dimView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:visibility="gone" />
+
+    <!-- Partikül Efekti -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/particleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="d.json"
+        app:lottie_loop="false" />
+
+    <!-- Sonuç Kartı -->
+    <LinearLayout
+        android:id="@+id/sonucKart"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/buttonai"
+        android:backgroundTint="#4B7ABC"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/sonucZarImage"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_gravity="center"
+            android:alpha="0.25"
+            android:src="@drawable/dice_1"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/sonucMetni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-48dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/bf10"
+            android:gravity="center"
+            android:text="@string/sonuc"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <Button
+            android:id="@+id/btnTamam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button1"
+            android:backgroundTint="#4068A0"
+            android:fontFamily="@font/bf11"
+            android:text="@string/tamam"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</FrameLayout>

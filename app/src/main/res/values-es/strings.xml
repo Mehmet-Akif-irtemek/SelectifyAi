@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">SelectifyAI</string>
+
+    <!-- Login and Authentication -->
+    <string name="sign_in_button">Iniciar sesión con Google</string>
+    <string name="sign_in_failed">El proceso de inicio de sesión fue cancelado.</string>
+    <string name="google_sign_in_failed">Error al iniciar sesión con Google.</string>
+    <string name="firebase_auth_failed">Error de autenticación de Firebase.</string>
+    <string name="google_info_missing">No se pudo obtener la información requerida de Google.</string>
+    <string name="network_error">Por favor, verifica tu conexión a internet.</string>
+    <string name="signing_in">Iniciando sesión...</string>
+
+    <!-- Information -->
+    <string name="bilgilendirme1">Inicia sesión en nuestra aplicación y permítenos conocerte mejor 😊 El nombre, foto y dirección de correo electrónico de tu cuenta de inicio de sesión solo se mostrarán en tu pantalla de perfil.</string>
+    <string name="bilgilendirme2">La información de tu cuenta de Google nunca se guarda ni se comparte con terceros.</string>
+
+    <!-- Onboarding -->
+    <string name="ilkekranaciklama">Deja de ser indeciso. Toma la decisión correcta rápidamente con sugerencias impulsadas por IA. ¡Si estás listo, comencemos!</string>
+    <string name="ilkekranbuton">¡Haz tus elecciones!</string>
+    <string name="buttonilerisecim">Siguiente</string>
+    <string name="secimsorumluluklar">¿Cuáles son tus responsabilidades?</string>
+    <string name="secimlerkonum">¿Te gustaría otorgar permiso de ubicación?</string>
+    <string name="secimlerkaçyaş">¿Cuántos años tienes?</string>
+    <string name="yaskaç">¿Cuántos años tienes?</string>
+    <string name="buttonizinver">Otorgar permiso</string>
+    <string name="bunaneden">¿Por qué necesitamos esto?</string>
+    <string name="aciklama1">Esta información es necesaria para brindarte resultados más lógicos y adecuados cuando hables con IA o lances dados. Tus datos solo se transmitirán de forma segura a los servicios de IA (API).</string>
+    <string name="aciklama2">Esta información es necesaria para proporcionar sugerencias más lógicas. Aunque proporcionar la ubicación no es obligatorio, si la proporcionas, tus decisiones serán mucho más lógicas.</string>
+    <string name="izin1">Al hacer clic en \'Siguiente\', aceptas que tus datos se transmitan de forma segura a los servicios de IA.</string>
+    <string name="izin2">Al hacer clic en la marca de verificación, aceptas que tus datos se transmitan de forma segura a los servicios de IA.</string>
+    <string name="mod">¿Cuál es tu estado de ánimo hoy?</string>
+
+    <!-- Main Screen -->
+    <string name="anaekran1">¿Qué decidirás hoy?</string>
+    <string name="edittextyazınız">Escribe aquí...</string>
+    <string name="todo">¿Qué harás hoy?</string>
+    <string name="gorev">Nueva tarea...</string>
+
+    <!-- Dice Rolling -->
+    <string name="zar_at">Lanzar dados</string>
+    <string name="Zarat">Lanzamiento de dados aleatorio</string>
+    <string name="Zara2t">Lanzamiento de dados con IA</string>
+    <string name="secenek_modu">Selección de opciones</string>
+    <string name="evet_hayir_modu">Sí/No</string>
+    <string name="secenek1_hint">Opción 1 (ej. Juego)</string>
+    <string name="secenek2_hint">Opción 2 (ej. Estudiar)</string>
+    <string name="soru_hint">Escribe tu pregunta</string>
+    <string name="sonuc">Resultado</string>
+    <string name="secim">Elección: %1$s</string>
+    <string name="evet">Sí</string>
+    <string name="hayir">No</string>
+    <string name="iki_secenek_gir">¡Ambas opciones deben ser ingresadas!</string>
+    <string name="soru_gir">¡Debes escribir una pregunta!</string>
+    <string name="zarsayfa3">El sistema de dados impulsado por IA tiene como objetivo proporcionar la opción más lógica analizando información como edad, estado de ánimo, ubicación, responsabilidades y clima. Sin embargo, las decisiones dadas son consultivas, y la responsabilidad final pertenece al usuario.</string>
+    <string name="en_az_iki_secenek">¡Se requieren al menos 2 opciones!</string>
+    <string name="lutfen_soru_gir">Por favor ingresa una pregunta</string>
+    <string name="konum_alinamadi">No se pudo obtener la ubicación</string>
+    <string name="konum_alinamadi_detay">Error de ubicación: %1$s</string>
+    <string name="konum_izni_verilmedi">Permiso de ubicación no otorgado.</string>
+    <string name="konum_izni_gerekli">Permiso de ubicación requerido.</string>
+    <string name="kullanici_verileri_alinamadi">No se pudieron obtener los datos del usuario</string>
+    <string name="veri_islenemedi">Los datos no pudieron ser procesados.</string>
+    <string name="baglanti_hatasi">Error de conexión.</string>
+    <string name="yer_gosteriliyor">Mostrando %1$d lugares (más cercanos).</string>
+    <string name="hosgeldin_kullanici">Bienvenido %1$s</string>
+    <string name="mod_kaydedildi">Tu estado de ánimo ha sido guardado: %1$s</string>
+    <string name="kayit_basarisiz">Error al guardar</string>
+    <string name="hava_durumu_alinamadi">No se pudo obtener información del clima</string>
+    <string name="konum_ornek">Ubicación: %1$s/%2$s</string>
+    <string name="hava_durumu_ornek">%1$s: %2$s - %3$.1f°C</string>
+    <string name="ai_cevap_alinamadi">No se pudo obtener respuesta de IA</string>
+    <string name="ai_hatasi">Error de IA</string>
+    <string name="ai_prompt_evethayir">Da una respuesta corta y lógica a la pregunta. No respondas solo \"Sí\" o \"No\", da consejos directos.\nPor ejemplo:\n- \"¿Debería salir?\" ➝ \"Sal\" o \"No salgas\"\n- \"¿Debería estudiar?\" ➝ \"Estudia\" o \"Descansa un poco\"\n\nConsidera la edad, estado de ánimo, responsabilidades y clima del usuario, pero no exageres las responsabilidades. Usa un tono equilibrado y de apoyo. No expliques, solo escribe la sugerencia.</string>
+
+    <!-- AI Prompts -->
+    <string name="ai_system_prompt">Sugiere una decisión lógica pero equilibrada considerando la edad, estado de ánimo, clima y responsabilidades del usuario. No crees presión innecesaria. Habla en español. Da solo una sugerencia corta y clara.</string>
+    <string name="ai_prompt_secim">A continuación están las opciones proporcionadas por el usuario.\nPor favor selecciona solo una de estas opciones, la más adecuada para el usuario.\n\nAl hacer la selección, considera la edad, estado de ánimo, responsabilidades y clima del usuario, pero no exageres las responsabilidades.\nNo reescribas, ordenes o expliques las opciones.\n\nSolo escribe la elección clara con una palabra o una oración corta. No expliques.</string>
+
+    <!-- Menu -->
+    <string name="anasayfa">Inicio</string>
+    <string name="profil">Perfil</string>
+    <string name="zaratma">¡Lanzar dados!</string>
+    <string name="ayarlar">Configuración</string>
+    <string name="cıkıs">Cerrar sesión</string>
+
+    <!-- Dice explanation -->
+    <string name="zarsayfa1">¿Cómo funciona?</string>
+    <string name="zarsayfa2">El lanzamiento de dados aleatorio se basa completamente en el azar y no contiene ninguna lógica o valor ético. Por lo tanto, la aplicación no puede ser responsable de las decisiones resultantes.</string>
+
+    <!-- Options -->
+    <string name="ilk_secenek">Opción 1</string>
+    <string name="ikinci_secenek">Opción 2</string>
+    <string name="secenek_ekle">+ Agregar opción</string>
+    <string name="secenek">Opción</string>
+    <string name="secenek_n_hint">Opción %1$d</string>
+    <string name="max_6_secenek">¡Puedes agregar hasta 6 opciones!</string>
+    <string name="en_fazla_6_secenek">¡Puedes agregar hasta 6 opciones!</string>
+    <string name="birinci_secenek">Opción 1</string>
+    <string name="ai_prompt_kullanici_bilgi">Nombre de usuario: %1$s\nEdad: %2$d\nResponsabilidades: %3$s\nEstado de ánimo de hoy: %4$s\nClima: %5$s\nOpciones:\n%6$s%7$s</string>
+    <string name="ai_prompt_evet_hayir">Da una respuesta lógica y corta a la pregunta. Si la pregunta está en la forma \"... debería / ... debo\", responde directamente con acción en lugar de solo \"Sí\" o \"No\". Por ejemplo:\n- \"¿Debería salir?\" ➝ \"Sal\" o \"No salgas\"\n- \"¿Debería estudiar?\" ➝ \"Estudia\" o \"No estudies\"\n\nTambién considera la edad, estado de ánimo, responsabilidades y clima del usuario. Habla en español. Solo escribe la palabra de decisión. No expliques.</string>
+    <string name="ai_cevabi_alinamadi">No se pudo obtener respuesta de IA</string>
+
+    <!-- Profile -->
+    <string name="profil_guncellendi">Perfil actualizado</string>
+    <string name="fotograf_buyuk">¡La foto no puede ser mayor a 2MB!</string>
+    <string name="fotograf_limit">Puedes cambiar tu foto como máximo 3 veces al día.</string>
+    <string name="fotograf_islenemedi">No se pudo procesar la foto: %1$s</string>
+    <string name="mevcut_ad">Nombre actual: %1$s</string>
+    <string name="mevcut_sorumluluk">Responsabilidad actual: %1$s</string>
+
+    <!-- General -->
+    <string name="kedi">Google Maps no instalado</string>
+    <string name="vazgeç">Cancelar</string>
+    <string name="hata">Error</string>
+    <string name="dene">Intentar de nuevo</string>
+    <string name="x">Error al guardar perfil. ¿Te gustaría intentar de nuevo?</string>
+
+    <!-- Cards -->
+    <string name="card1">¡Lugares que puedes visitar!</string>
+    <string name="card2">Clima</string>
+    <string name="card11">xxxxxxxxxxxx</string>
+
+    <!-- Categories -->
+    <string name="katagoriler">Restaurantes</string>
+    <string name="katagoriler1">Espacios de trabajo</string>
+    <string name="katagoriler2">Centros comerciales</string>
+
+    <!-- Navigation -->
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+    <string name="location_prompt">Lugares para explorar cerca de %1$s te están esperando</string>
+
+    <!-- Firebase Config -->
+    <string name="default_web_client_id">187855956634-oejedr4qh3kkns0dbssn9nsfm5qv1v9m.apps.googleusercontent.com</string>
+    <string name="kullanici_adi">Nombre de usuario</string>
+    <string name="profil_fotografi_sec">Seleccionar foto de perfil</string>
+    <string name="kaydet">Guardar</string>
+    <string name="yeni_ad_hint">Ingresa tu nuevo nombre</string>
+    <string name="yeni_sorumluluk_hint">Ingresa tu nueva responsabilidad</string>
+
+    <!-- Extras -->
+    <string name="yer_adi">Nombre del lugar</string>
+    <string name="tur">Tipo: </string>
+    <string name="selectifyai">SelectifyAI</string>
+    <string name="hosgeldin">Bienvenido</string>
+    <string name="hava_durumu_yukleniyor">Cargando clima...</string>
+    <string name="uygulama_nasil_kullanmak">Cómo te gustaría usar la aplicación</string>
+    <string name="secenek_modu_text">Modo de opciones</string>
+    <string name="evet_hayir_modu_text">Modo Sí/No</string>
+    <string name="ai_ile_zar_at">Lanzar dados con IA</string>
+    <string name="ai_yanit_burada">La respuesta de IA aparecerá aquí</string>
+
+    <!-- Notification Channel -->
+    <string name="mod_channel_id">mod_channel</string>
+    <string name="mod_channel_name">Canal de notificación de estado de ánimo</string>
+    <string name="mod_notification_title">Comparte tu estado de ánimo con nosotros 🌤️</string>
+    <string name="mod_notification_text">¿Te gustaría expresar tu estado de ánimo de hoy con un emoji?</string>
+
+    <!-- Type/Distance -->
+    <string name="tur_mesafe">Tipo: %1$s%2$s</string>
+    <string name="mesafe_ek"> - %1$d m</string>
+    <string name="tamam">OK</string>
+
+    <!-- Bottom Navigation -->
+    <string name="bottom_nav_home">Inicio</string>
+    <string name="bottom_nav_tasks">Tareas</string>
+    <string name="bottom_nav_settings">Perfil</string>
+
+    <!-- Settings Screen -->
+    <string name="logout_success">Sesión cerrada</string>
+    <string name="language_turkish">Türkçe</string>
+    <string name="language_english">English</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_french">Français</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_chinese">中文</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_hindi">हिन्दी</string>
+
+    <!-- Layout Texts -->
+    <string name="dice_question_hint">Escribe sobre lo que estás indeciso...</string>
+    <string name="theme_label">Tema</string>
+    <string name="language_selection_label">Selección de idioma</string>
+    <string name="logout_button">Cerrar sesión</string>
+
+    <!-- AnaEkran Texts -->
+    <string name="weather_indoor_restaurant">Restaurantes interiores recomendados debido al clima/estado de ánimo.</string>
+    <string name="weather_indoor_workspace">Biblioteca o espacios de coworking recomendados debido al clima/estado de ánimo.</string>
+    <string name="weather_indoor_shopping">Centros comerciales recomendados debido al clima/estado de ánimo.</string>
+    <string name="weather_nearby_places">Lugares cercanos recomendados.</string>
+    <string name="outdoor_cafes_suggestion">Cafés al aire libre recomendados.</string>
+    <string name="google_places_error">Error de Google Places: %1$s</string>
+    <string name="user_data_missing">No hay datos de usuario.</string>
+    <string name="user_info_fetch_failed">No se pudo obtener información del usuario.</string>
+    <string name="unknown_place">Desconocido</string>
+    <string name="unknown_type">desconocido</string>
+    <string name="restaurant_keyword">restaurante</string>
+    <string name="library_keyword">biblioteca</string>
+    <string name="shopping_keyword">compras</string>
+    <string name="place_keyword">lugar</string>
+    <string name="a_k">Claro</string>
+    <string name="koyu">Oscuro</string>
+
+    <!-- Task Strings -->
+    <string name="add_task">Agregar tarea</string>
+    <string name="no_tasks">No hay tareas que completar 🎉</string>
+
+    <!-- ZarAi Activity Strings -->
+    <string name="kalan_hak_placeholder">Derechos restantes: 10</string>
+    <string name="kalan_hak_format">Derechos restantes: %1$d</string>
+    <string name="kalan_hak_giris_yapin">Derechos restantes: Por favor inicia sesión</string>
+    <string name="lutfen_once_giris_yapin">Por favor inicia sesión primero</string>
+    <string name="hak_kontrolu_yapilamadi">No se pudo realizar la verificación de derechos</string>
+    <string name="ek_hak_kazandin">¡Ganaste %1$d derechos adicionales!</string>
+    <string name="reklam_yuklenemedi">No se pudo cargar el anuncio: %1$s</string>
+    <string name="reklam_gosterilemedi">No se pudo mostrar el anuncio: %1$s</string>
+    <string name="reklam_yukleniyor_bekleyin">El anuncio se está cargando, por favor espera...</string>
+    <string name="secilen_format">Seleccionado: %1$s</string>
+    <string name="konum_izni_gerekli_toast">Permiso de ubicación requerido</string>
+    <string name="reklam_izle">Ver anuncio</string>
+    <string name="premiuma_gec">Actualizar a Premium</string>
+    <string name="hak_bitti_mesaj">Los derechos diarios se han agotado</string>
+    <string name="reklam_izle_ek_hak">Ver anuncio (+2 derechos)</string>
+
+    <!-- AI Chat Activity Strings -->
+    <string name="ai_chat_title">Chat de IA</string>
+    <string name="ai_typing">IA está escribiendo...</string>
+    <string name="chat_cleared">Historial de chat borrado</string>
+    <string name="menu_previous_messages">Mensajes anteriores</string>
+    <string name="menu_new_message">Nuevo mensaje</string>
+    <string name="menu_clear_chat">Limpiar chat</string>
+    <string name="menu_settings">Configuración</string>
+
+    <!-- New Prompt Strings -->
+    <string name="hint_type_message1">Escribe tu mensaje...</string>
+    <string name="button_send1">Enviar</string>
+    <string name="delete_day1">Eliminar este día</string>
+    <string name="ai_prompt_secim1">Eres un asistente de chat de IA. Hablas con usuarios sobre temas cotidianos. Tus respuestas deben ser naturales, cortas y sinceras. Puedes hacer humor y dar sugerencias. Información como la edad, estado de ánimo o responsabilidades del usuario solo debe usarse brevemente cuando sea realmente necesario y en un contexto apropiado. No recuerdes especialmente las responsabilidades repetidamente o las uses de manera consultiva. Escribe en español y no hables como un robot.</string>
+    <string name="ai_prompt_evet_hayir1">Eres un asistente de chat de IA. Das respuestas de sí-no a los usuarios pero también puedes agregar una razón corta cuando sea necesario. Tus respuestas deben ser naturales, sinceras y cálidas. Si la información sobre el usuario (edad, estado de ánimo, responsabilidad, etc.) es muy apropiada, puedes mencionarla cortésmente, pero no recuerdes especialmente las responsabilidades repetidamente o las uses de manera presionante. Habla en español y no seas como un robot.</string>
+    <string name="ai_system_prompt1">Eres una IA que chatea con usuarios en español sincero, natural y comprensible. Puedes hacer humor, empatizar cuando sea necesario y hacer sugerencias. Usa información sobre el usuario solo cuando sea necesario, apropiadamente y una sola vez. En lugar de repetir y recordar constantemente las responsabilidades, mantén la conversación fluida y agradable. No hables como un robot.</string>
+
+    <!-- Hardcode Text Translations -->
+    <string name="sohbet_gecmisi">Historial de chat</string>
+    <string name="kullanici_mesaji_placeholder">El mensaje del usuario aparecerá aquí</string>
+    <string name="ai_yaniti_placeholder">La respuesta de IA aparecerá aquí</string>
+    <string name="gunluk_hak_bitti">Los derechos diarios se han agotado</string>
+    <string name="reklam_izle_hak">Ver anuncio (+2 derechos)</string>
+    <string name="premiuma_gec_text">Actualizar a Premium</string>
+    <string name="hava_durumu_alinamadi_toast">No se pudo obtener el clima</string>
+    <string name="ai_format_hatasi">Error de formato de IA</string>
+    <string name="tum_mesajlari_sil">Eliminar todos los mensajes</string>
+    <string name="bos_baslik">(Título vacío)</string>
+    <string name="tum_mesajlari_sil_baslik">Eliminar todos los mensajes</string>
+    <string name="tum_mesajlari_sil_mesaj">¿Estás seguro de que quieres eliminar todos los mensajes de este chat?</string>
+    <string name="evet_button">Sí</string>
+    <string name="hayir_button">No</string>
+    <string name="tum_mesajlar_silindi">Todos los mensajes eliminados</string>
+    <string name="mesaji_sil">Eliminar mensaje</string>
+    <string name="mesaji_sil_onay">¿Estás seguro de que quieres eliminar este mensaje?</string>
+    <string name="bilinmiyor">Desconocido</string>
+    <string name="belirtilmemis">No especificado</string>
+    <string name="kullanici_bilgisi_alinamadi">No se pudo obtener información del usuario.</string>
+    <string name="bilinmiyor_kisa">desconocido</string>
+    <string name="soru_prefix">Pregunta: </string>
+    <string name="gunluk_groq_limit_doldu">El límite diario de Groq está lleno (50).</string>
+    <string name="groq_hatasi">Error de Groq: %1$s</string>
+    <string name="veri_ayristairilamadi">Los datos no pudieron ser analizados.</string>
+    <string name="google_places_hatasi_toast">Error de Google Places: %1$s</string>
+    <string name="chatler_yuklenemedi">No se pudieron cargar los chats</string>
+    <string name="uzgun_mod">triste</string>
+    <string name="yagmur_keyword">lluvia</string>
+    <string name="kar_keyword">nieve</string>
+    <string name="sohbeti_sil">Eliminar chat</string>
+    <string name="sohbeti_sil_onay">chat quieres eliminar?</string>
+
+    <!-- Log Messages -->
+    <string name="admob_baslatiliyor">AdMob inicializando...</string>
+    <string name="admob_baslatildi">AdMob inicializado: %1$s</string>
+    <string name="kullanici_oturum_acmamis">Usuario no ha iniciado sesión</string>
+    <string name="hak_bitti_reklam_panel">Derechos agotados, mostrando panel de anuncio/premium</string>
+    <string name="hak_kontrolu_hatasi">Error de verificación de derechos: %1$s</string>
+    <string name="ek_hak_eklendi">Derechos adicionales agregados: +%1$d, total: %2$d</string>
+    <string name="hak_ekleme_hatasi">Error al agregar derechos: %1$s</string>
+    <string name="hak_gosterme_hatasi">Error al mostrar derechos: %1$s</string>
+    <string name="kalan_hak_log">Derechos restantes: %1$d</string>
+    <string name="admob_henuz_baslatilmadi">AdMob aún no inicializado</string>
+    <string name="reklam_zaten_yukleniyor_log">Anuncio ya cargando o listo</string>
+    <string name="rewarded_ad_yukleniyor_log">Anuncio recompensado cargando...</string>
+    <string name="rewarded_ad_basariyla_yuklendi_log">Anuncio recompensado cargado exitosamente</string>
+    <string name="rewarded_ad_yukleme_hatasi_log">Error al cargar anuncio recompensado: %1$s</string>
+    <string name="hata_kodu_log">Código de error: %1$d</string>
+    <string name="hata_mesaji_log">Mensaje de error: %1$s</string>
+    <string name="rewarded_ad_gosteriliyor_log">Mostrando anuncio recompensado</string>
+    <string name="reklam_tiklandi_log">Anuncio clickeado</string>
+    <string name="reklam_kapatildi_log">Anuncio cerrado</string>
+    <string name="reklam_gosterme_hatasi_log_msg">Error al mostrar anuncio: %1$s</string>
+    <string name="reklam_gosterildi_log">Anuncio mostrado</string>
+    <string name="reklam_tam_ekranda_gosterildi_log">Anuncio mostrado en pantalla completa</string>
+    <string name="kullanici_odul_kazandi_log">Usuario ganó recompensa: %1$d %2$s</string>
+    <string name="reklam_henuz_hazir_degil_log">Anuncio aún no está listo</string>
+    <string name="konum_izni_verildi_log">Permiso de ubicación otorgado</string>
+    <string name="konum_izni_reddedildi_log">Permiso de ubicación denegado</string>
+
+    <!-- Missing strings from Turkish version -->
+    <string name="gunaydin">Buenos días, %1$s 👋</string>
+    <string name="tunaydin">Buenas tardes, %1$s 👋</string>
+    <string name="iyi_aksamlar">Buenas tardes, %1$s 👋</string>
+    <string name="iyi_geceler">Buenas noches, %1$s 👋</string>
+    <string name="chats">Chats</string>
+    <string name="plan_free_features">
+    • 1 lanzamiento de dados con IA por día\n\n• 3 derechos de chat con IA\n\n• 1 sugerencia de ubicación con IA
+</string>
+    <string name="plan_premium_features">
+    • 30 lanzamientos de dados con IA por día\n\n• 50 derechos de chat con IA\n\n• Sugerencias de ubicación ilimitadas con IA
+</string>
+    <string name="plan_pro_features">
+    • Lanzamientos de dados ilimitados con IA\n\n• Chat ilimitado con IA\n\n• Sugerencias de ubicación ilimitadas con IA\n\n• Servicio de soporte prioritario
+</string>
+    <string name="reklam_zaten_yukleniyor">Anuncio ya cargando o listo</string>
+    <string name="rewarded_ad_yukleniyor">Anuncio recompensado cargando...</string>
+    <string name="rewarded_ad_basariyla_yuklendi">Anuncio recompensado cargado exitosamente</string>
+    <string name="rewarded_ad_yukleme_hatasi">Error al cargar anuncio recompensado: %1$s</string>
+    <string name="hata_kodu">Código de error: %1$d</string>
+    <string name="hata_mesaji">Mensaje de error: %1$s</string>
+    <string name="rewarded_ad_gosteriliyor">Mostrando anuncio recompensado</string>
+    <string name="reklam_tiklandi">Anuncio clickeado</string>
+    <string name="reklam_kapatildi">Anuncio cerrado</string>
+    <string name="reklam_gosterme_hatasi_log">Error al mostrar anuncio: %1$s</string>
+    <string name="reklam_gosterildi">Anuncio mostrado</string>
+    <string name="reklam_tam_ekranda_gosterildi">Anuncio mostrado en pantalla completa</string>
+    <string name="kullanici_odul_kazandi">Usuario ganó recompensa: %1$d %2$s</string>
+    <string name="reklam_henuz_hazir_degil">Anuncio aún no está listo</string>
+    <string name="konum_izni_verildi">Permiso de ubicación otorgado</string>
+    <string name="konum_izni_reddedildi">Permiso de ubicación denegado</string>
+    <string name="hak_sayisi">Cantidad de Derechos\n</string>
+    <string name="purchase_coming_soon">Próximamente</string>
+
+    <!-- Hardcoded strings from Java files -->
+    <string name="google_ile_giris_basarisiz">Error al iniciar sesión con Google.</string>
+    <string name="internet_baglantisi_yok">Sin conexión a internet.</string>
+    <string name="google_hesabi_bilgileri_eksik">La información de la cuenta de Google está incompleta.</string>
+    <string name="firebase_kimlik_dogrulama_basarisiz">Error de autenticación de Firebase.</string>
+    <string name="kullanici_bilgileri_kontrol_edilemedi">No se pudo verificar la información del usuario.</string>
+    <string name="kullanicilar_koleksiyonu">usuarios</string>
+    <string name="onboarding_prefs">onboarding_prefs</string>
+    <string name="onboarding_tamamlandi">onboarding_completado</string>
+    <string name="uid">uid</string>
+    <string name="eposta">email</string>
+    <string name="kullanici_adi_field">nombre_usuario</string>
+    <string name="kayit_tarihi">fecha_registro</string>
+    <string name="profil_foto_url">url_foto_perfil</string>
+    <string name="onboarding_tamamlandi_field">onboardingTamamlandi</string>
+    <string name="kalan">restante</string>
+    <string name="zar_hakki">derechos_dados</string>
+    <string name="groq_limit">groq_limit</string>
+    <string name="count">contador</string>
+    <string name="premium">premium</string>
+    <string name="chats_collection">chats</string>
+    <string name="messages_collection">mensajes</string>
+    <string name="message_field">mensaje</string>
+    <string name="is_user_field">esUsuario</string>
+    <string name="timestamp_field">marca_tiempo</string>
+    <string name="first_message_field">primerMensaje</string>
+    <string name="ayarlar_prefs">configuracion</string>
+    <string name="koyu_mod">modo_oscuro</string>
+    <string name="dil">idioma</string>
+    
+    <!-- Additional hardcoded strings -->
+    <string name="kullanici_kontrol_hatasi">Error de verificación de usuario</string>
+    <string name="kimlik_dogrulamada_hata">Error de autenticación</string>
+    <string name="meta_llama_model">meta-llama/moonshotai/kimi-k2-instruct</string>
+    <string name="system_role">sistema</string>
+    <string name="user_role">usuario</string>
+    <string name="content_field">contenido</string>
+    <string name="role_field">rol</string>
+    <string name="messages_field">mensajes</string>
+    <string name="model_field">modelo</string>
+    <string name="temperature_field">temperatura</string>
+    <string name="top_p_field">top_p</string>
+    <string name="choices_field">opciones</string>
+    <string name="message_response_field">mensaje</string>
+    <string name="groq_api_url">https://api.groq.com/openai/v1/chat/completions</string>
+    <string name="authorization_header">Authorization</string>
+    <string name="bearer_prefix">Bearer </string>
+    <string name="content_type_header">Content-Type</string>
+    <string name="application_json">application/json</string>
+    <string name="post_method">POST</string>
+    <string name="get_method">GET</string>
+    <string name="weather_api_url_template">https://api.openweathermap.org/data/2.5/weather?lat=%f&amp;lon=%f&amp;appid=%s&amp;units=metric&amp;lang=tr</string>
+    <string name="main_weather_field">main</string>
+    <string name="temp_field">temp</string>
+    <string name="weather_array_field">clima</string>
+    <string name="think_tag">&lt;think&gt;</string>
+    
+    <!-- ZarAiActivity hardcoded strings -->
+    <string name="test_ad_unit_id">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="real_ad_unit_id">ca-app-pub-4497036434463360/9909505336</string>
+    <string name="zar_ai_activity_tag">ZarAiActivity</string>
+    <string name="kullanicilar">kullanicilar</string>
+    <string name="zar_hakki_collection">zar_hakki</string>
+    <string name="groq_limit_collection">groq_limit</string>
+    <string name="yyyy_mm_dd_format">yyyyMMdd</string>
+    <string name="hh_mm_format">HH:mm</string>
+    <string name="dice_image_prefix">dice_</string>
+    <string name="drawable_package">drawable</string>
+    <string name="onboarding_tamamlandi_boolean">onboardingTamamlandi</string>
+    
+    <!-- AiChatActivity hardcoded strings -->
+    <string name="main_field">main</string>
+    <string name="weather_field">clima</string>
+    <string name="description_field">descripcion</string>
+    <string name="kullanici_adi_firestore">kullaniciAdi</string>
+    <string name="yas_field">yas</string>
+    <string name="sorumluluk_field">sorumluluk</string>
+    <string name="user_info_format">\\nUsuario: %s\\nEdad: %d\\nResponsabilidad: %s\\nUbicación: %s/%s\\nClima: %s, %.1f°C</string>
+    <string name="user_info_no_data_format">\\n%s\\nUbicación: %s/%s\\nClima: %s, %.1f°C</string>
+    <string name="question_mark">?</string>
+    <string name="slash">/</string>
+    <string name="menu_group_chats">1001</string>
+    <string name="empty_string"></string>
+    <string name="user_not_authenticated">Usuario no autenticado</string>
+    <string name="no_rights_remaining">No quedan derechos</string>
+    <string name="error_message_prefix">Error: </string>
+    <string name="user_data_could_not_be_retrieved">No se pudieron recuperar los datos del usuario.</string>
+    <string name="data_could_not_be_parsed">Los datos no se pudieron analizar.</string>
+    <string name="premium_plan">Plan Premium</string>
+    <string name="lk_ay_bedava">¡Primer mes gratis!</string>
+    <string name="_29_99_tl_ay">29,99 TL / Mes</string>
+    <string name="sat_n_al">Comprar</string>
+    <string name="cretsiz_plan">Plan Gratuito</string>
+    <string name="_79_99_tl_ay">79,99 TL / Mes</string>
+    <string name="pro_plan">Plan Pro</string>
+    <string name="reklam_hazir_degil">El anuncio aún no está listo, inténtalo de nuevo.</string>
+    <string name="haklar_tukendi">Tus derechos gratuitos de hoy se han agotado.</string>
+    <string name="hak_bilgisi_alinamadi">No se pudo obtener información de derechos.</string>
+    <string name="groq_limiti_kontrol_edilemedi">No se pudo verificar el límite de Groq.</string>
+
+    <!-- Todo Search and Filter Strings -->
+    <string name="search_task_hint">Buscar tareas...</string>
+    <string name="filter_all">Todas</string>
+    <string name="filter_pending">Pendientes</string>
+    <string name="filter_completed">Completadas</string>
+    <string name="category_general">General</string>
+    <string name="category_work">Trabajo</string>
+    <string name="category_personal">Personal</string>
+    <string name="category_shopping">Compras</string>
+    <string name="category_health">Salud</string>
+    <string name="category_education">Educación</string>
+    <string name="category_label">Categoría</string>
+    <string name="description_label">Descripción (Opcional)</string>
+    <string name="description_hint">Descripción de la tarea...</string>
+    <string name="task_deleted">Tarea eliminada</string>
+    <string name="undo">Deshacer</string>
+    <string name="add_button_desc">Agregar</string>
+    <string name="delete_button_desc">Eliminar</string>
+    <string name="notification_channel_name">Notificaciones de Tareas</string>
+    <string name="notification_channel_desc">Notificaciones para tareas incompletas</string>
+    <string name="notification_permission_granted">Permiso de notificación otorgado</string>
+    <string name="notification_permission_denied">Permiso de notificación denegado, los recordatorios pueden no funcionar</string>
+    <string name="priority_high_key">alta</string>
+    <string name="priority_medium_key">media</string>
+    <string name="priority_low_key">baja</string>
+    <string name="ai_error_code">Error</string>
+
+        <string name="prompt_choice_intro">Por favor, elige la opción más lógica entre las siguientes:</string>
+        <string name="prompt_choice_item_format">%1$d. %2$s</string>
+        <string name="prompt_choice_suffix">Da tu respuesta en el formato \'Respuesta: [opción]\' y luego explica tu razonamiento.</string>
+
+        <string name="prompt_yesno_intro">Responde a la siguiente pregunta solo con \'Sí\' o \'No\' y explica por qué:</string>
+        <string name="prompt_yesno_question">Pregunta: %1$s</string>
+        <string name="prompt_yesno_suffix">Respuesta: [sí/no] Razón: [explicación]</string>
+
+        <string name="prompt_emoji_intro">Responde con el emoji que mejor exprese el sentimiento de la siguiente frase:</string>
+
+        <string name="system_message_template">Eres el asistente de toma de decisiones de SelectifyAI. Al responder, ten en cuenta el idioma del usuario \"%1$s\" así como su edad, ubicación, estado de ánimo y otros detalles.</string>
+
+        <string name="api_url">https://api.groq.com/openai/v1/chat/completions</string>
+        <string name="api_model">moonshotai/kimi-k2-instruct</string>
+    <string name="gerek_eyi_g_ster">Mostrar motivo</string>
+    <string name="arkada_n_davet_et">Invitar a un amigo</string>
+    <string name="paylas">Compartir</string>
+    <string name="referral_dialog_title">🎁 Ingresar Código de Referencia</string>
+    <string name="referral_dialog_message">Ingresa el código que te dio tu amigo y ambos ganarán créditos extra.</string>
+    <string name="referral_code_hint">Escribe el código aquí...</string>
+    <string name="my_referral_code">📋 Tu Código: %1$s\n(Compártelo con tus amigos)</string>
+    <string name="btn_use_code">✅ Usar Código</string>
+    <string name="btn_cancel">❌ Cancelar</string>
+    <string name="btn_copy_code">📋 Copiar Código</string>
+    <string name="code_copied">Código copiado: %1$s</string>
+    <string name="enter_valid_code">Por favor ingresa un código válido</string>
+    <string name="code_too_short">¡El código es muy corto! Mínimo 6 caracteres</string>
+    <string name="cannot_use_own_code">¡No puedes usar tu propio código! 😄</string>
+    <string name="code_already_used">¡Ya usaste este código!</string>
+    <string name="invalid_referral_code">❌ Código inválido</string>
+    <string name="code_check_error">Error al verificar el código</string>
+    <string name="cannot_use_own_invite">No puedes usar tu propio enlace de invitación</string>
+    <string name="invite_bonus_inviter">¡Ganaste +20 créditos por invitar a un amigo! 🎉</string>
+    <string name="invite_bonus_invited">¡Ganaste +10 créditos por aceptar una invitación! 🎁</string>
+    <string name="bonus_added_error">Error al agregar el bono</string>
+    <string name="share_invite_text">🎲 SelectifyAI - App de decisiones con IA\n\n📱 Descargar APK: %1$s\n🌐 Sitio Web: %2$s\n\n🎁 Usa este enlace para que ambos ganemos créditos\n👤 Código de Referencia: %3$s\n\n📋 Instalación Manual:\n1. Descarga el APK\n2. Activa orígenes desconocidos\n3. Instala el APK\n4. Abre la app (bono automático)\n\n#SelectifyAI #IA #Decisiones #Android</string>
+    <string name="invite_shared_message">¡Mensaje de invitación compartido!\nTu código: %1$s</string>
+    <string name="share_selectify">Compartir SelectifyAI</string>
+    <string name="invite_friend_btn">Invitar a un Amigo</string>
+    <string name="enter_code_btn">Ingresar Código</string>
+</resources>

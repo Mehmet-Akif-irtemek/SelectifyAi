@@ -1,0 +1,542 @@
+<resources>
+    <!-- 应用名称 -->
+    <string name="app_name">SelectifyAI</string>
+
+    <!-- 登录与身份验证 -->
+    <string name="sign_in_button">使用 Google 登录</string>
+    <string name="sign_in_failed">登录过程已取消。</string>
+    <string name="google_sign_in_failed">Google 登录失败。</string>
+    <string name="firebase_auth_failed">Firebase 身份验证失败。</string>
+    <string name="google_info_missing">无法获取所需的 Google 信息。</string>
+    <string name="network_error">请检查您的互联网连接。</string>
+    <string name="signing_in">正在登录...</string>
+        <string name="prompt_choice_intro">请从以下选项中选择最符合逻辑的：</string>
+        <string name="prompt_choice_item_format">%1$d. %2$s</string>
+        <string name="prompt_choice_suffix">请按 \'回答: [选项]\' 格式给出答案，然后说明理由。</string>
+
+        <string name="prompt_yesno_intro">只用 \'是\' 或 \'否\' 回答以下问题，并说明原因：</string>
+        <string name="prompt_yesno_question">问题：%1$s</string>
+        <string name="prompt_yesno_suffix">回答：[是/否] 原因：[说明]</string>
+
+        <string name="prompt_emoji_intro">请用最能表达下列句子情感的表情符号回复：</string>
+
+        <string name="system_message_template">你是SelectifyAI的决策助手。回复时请考虑用户的语言 \"%1$s\" 以及他们的年龄、位置、心情等信息。</string>
+
+        <string name="api_url">https://api.groq.com/openai/v1/chat/completions</string>
+        <string name="api_model">moonshotai/kimi-k2-instruct</string>
+    <!-- 信息 -->
+    <string name="bilgilendirme1">登录我们的应用程序，让我们更好地了解你 😊 你在登录时使用的账户的姓名、照片和电子邮件地址仅显示在你的个人资料页面。</string>
+    <string name="bilgilendirme2">你的 Google 账户信息绝不会被保存或与第三方共享。</string>
+
+    <!-- 引导页 -->
+    <string name="ilkekranaciklama">别再犹豫不决。使用 AI 驱动的建议快速做出最佳选择。如果你准备好了，那我们开始吧！</string>
+    <string name="ilkekranbuton">做出你的选择！</string>
+    <string name="buttonilerisecim">下一步</string>
+    <string name="secimsorumluluklar">你的责任有哪些？</string>
+    <string name="secimlerkonum">是否允许访问位置信息？</string>
+    <string name="secimlerkaçyaş">你几岁？</string>
+    <string name="yaskaç">你几岁？</string>
+    <string name="buttonizinver">允许</string>
+    <string name="bunaneden">我们为什么需要这些信息？</string>
+    <string name="aciklama1">我们需要这些信息，以便在与 AI 交互或掷骰子时为你提供更合理、符合需求的结果。你的数据将仅安全地传输给 AI 服务（API）。</string>
+    <string name="aciklama2">我们需要这些信息以提供更合理的建议。虽然提供位置不是强制的，但如果你提供，我们可以给出更明智的建议。</string>
+    <string name="izin1">点击“下一步”即表示你同意将数据安全传输给 AI 服务。</string>
+    <string name="izin2">点击勾选即表示你同意将数据安全传输给 AI 服务。</string>
+    <string name="mod">你今天的心情如何？</string>
+
+    <!-- 主页面 -->
+    <string name="anaekran1">你今天要做什么决定？</string>
+    <string name="edittextyazınız">请输入...</string>
+    <string name="todo">你今天打算做什么？</string>
+    <string name="gorev">新任务...</string>
+
+    <!-- 掷骰子 -->
+    <string name="zar_at">掷骰子</string>
+    <string name="Zarat">随机掷骰</string>
+    <string name="Zara2t">AI 掷骰</string>
+    <string name="secenek_modu">选项模式</string>
+    <string name="evet_hayir_modu">是 / 否</string>
+    <string name="secenek1_hint">选项1（例如：游戏）</string>
+    <string name="secenek2_hint">选项2（例如：学习）</string>
+    <string name="soru_hint">请输入你的问题</string>
+    <string name="sonuc">结果</string>
+    <string name="secim">选择：%1$s</string>
+    <string name="evet">是</string>
+    <string name="hayir">否</string>
+    <string name="iki_secenek_gir">请输入两个选项！</string>
+    <string name="soru_gir">你必须输入一个问题！</string>
+    <string name="zarsayfa3">AI 骰子系统会分析年龄、心情、位置、责任和天气等信息，以提供最合理的建议。但结果仅供参考，最终决定由用户承担。</string>
+    <string name="en_az_iki_secenek">至少需要 2 个选项！</string>
+    <string name="lutfen_soru_gir">请输入一个问题</string>
+    <string name="konum_alinamadi">无法获取位置信息</string>
+    <string name="konum_alinamadi_detay">位置错误：%1$s</string>
+    <string name="konum_izni_verilmedi">未授予位置权限。</string>
+    <string name="konum_izni_gerekli">需要位置权限。</string>
+    <string name="kullanici_verileri_alinamadi">无法获取用户数据</string>
+    <string name="veri_islenemedi">数据无法处理。</string>
+    <string name="baglanti_hatasi">连接错误。</string>
+    <string name="yer_gosteriliyor">显示 %1$d 个地点（最近）。</string>
+    <string name="hosgeldin_kullanici">欢迎 %1$s</string>
+    <string name="mod_kaydedildi">你的心情已保存：%1$s</string>
+    <string name="kayit_basarisiz">保存失败</string>
+    <string name="hava_durumu_alinamadi">无法获取天气信息</string>
+    <string name="konum_ornek">位置：%1$s/%2$s</string>
+    <string name="hava_durumu_ornek">%1$s: %2$s - %3$.1f°C</string>
+    <string name="ai_cevap_alinamadi">无法获取 AI 回复</string>
+    <string name="ai_hatasi">AI 错误</string>
+    <string name="ai_prompt_evethayir">请只回答“是”或“否”。用中文回答。责任不是人生的全部，请记住。</string>
+
+    <!-- AI 提示 -->
+    <string name="ai_system_prompt">请根据用户的年龄、心情、天气和责任，做出合理、适当的决定。用中文回答。只写决策。</string>
+    <string name="ai_prompt_secim">请从这些选项中选出最合理的一个，并直接用一行写下。只能选一个选项，不要写其他内容。</string>
+
+    <!-- 菜单 -->
+    <string name="anasayfa">主页</string>
+    <string name="profil">个人资料</string>
+    <string name="zaratma">掷骰！</string>
+    <string name="ayarlar">设置</string>
+    <string name="cıkıs">退出登录</string>
+
+    <!-- 骰子说明 -->
+    <string name="zarsayfa1">怎么运作？</string>
+    <string name="zarsayfa2">随机掷骰完全依赖运气，没有任何逻辑或道德判断。因此应用对结果不承担责任。</string>
+
+    <!-- 选项 -->
+    <string name="ilk_secenek">选项 1</string>
+    <string name="ikinci_secenek">选项 2</string>
+    <string name="secenek_ekle">+ 添加选项</string>
+    <string name="secenek">选项</string>
+    <string name="secenek_n_hint">第 %1$d 个选项</string>
+    <string name="max_6_secenek">最多可以添加 6 个选项！</string>
+    <string name="en_fazla_6_secenek">最多可以添加 6 个选项！</string>
+    <string name="birinci_secenek">选项 1</string>
+    <string name="ai_prompt_kullanici_bilgi">用户名：%1$s
+年龄：%2$d
+责任：%3$s
+今日心情：%4$s
+天气：%5$s
+选项：
+%6$s%7$s</string>
+    <string name="ai_prompt_evet_hayir">只回答是或否。用中文。责任不是全部人生，请记住这一点。</string>
+    <string name="ai_cevabi_alinamadi">无法获取 AI 回答</string>
+
+    <!-- 个人资料 -->
+    <string name="profil_guncellendi">个人资料已更新</string>
+    <string name="fotograf_buyuk">照片不能超过 2MB！</string>
+    <string name="fotograf_limit">你每天最多可更换 3 次照片。</string>
+    <string name="fotograf_islenemedi">无法处理照片：%1$s</string>
+    <string name="mevcut_ad">当前名称：%1$s</string>
+    <string name="mevcut_sorumluluk">当前责任：%1$s</string>
+
+    <!-- 通用 -->
+    <string name="kedi">未安装 Google 地图</string>
+    <string name="vazgeç">取消</string>
+    <string name="hata">错误</string>
+    <string name="dene">重试</string>
+    <string name="x">保存个人资料失败。要重试吗？</string>
+
+    <!-- 卡片 -->
+    <string name="card1">可去的地方！</string>
+    <string name="card2">天气</string>
+    <string name="card11">xxxxxxxxxxxx</string>
+
+    <!-- 分类 -->
+    <string name="katagoriler">餐厅</string>
+    <string name="katagoriler1">共享办公空间</string>
+    <string name="katagoriler2">购物中心</string>
+
+    <!-- 导航 -->
+    <string name="navigation_drawer_open">打开菜单</string>
+    <string name="navigation_drawer_close">关闭菜单</string>
+    <string name="location_prompt">靠近 %1$s 的地点等你探索</string>
+
+    <!-- Firebase 配置 -->
+    <string name="default_web_client_id">187855956634-oejedr4qh3kkns0dbssn9nsfm5qv1v9m.apps.googleusercontent.com</string>
+    <string name="kullanici_adi">用户名</string>
+    <string name="profil_fotografi_sec">选择头像</string>
+    <string name="kaydet">保存</string>
+    <string name="yeni_ad_hint">输入你的新名称</string>
+    <string name="yeni_sorumluluk_hint">输入你的新责任</string>
+
+    <!-- 其他 -->
+    <string name="yer_adi">地点名称</string>
+    <string name="tur">类型: </string>
+    <string name="selectifyai">SelectifyAI</string>
+    <string name="hosgeldin">欢迎</string>
+    <string name="hava_durumu_yukleniyor">正在加载天气...</string>
+    <string name="uygulama_nasil_kullanmak">你想如何使用该应用？</string>
+    <string name="secenek_modu_text">选项模式</string>
+    <string name="evet_hayir_modu_text">是/否模式</string>
+    <string name="ai_ile_zar_at">使用 AI 掷骰</string>
+    <string name="ai_yanit_burada">AI 回复将在此显示</string>
+
+    <!-- 通知频道 -->
+    <string name="mod_channel_id">mod_channel</string>
+    <string name="mod_channel_name">心情通知频道</string>
+    <string name="mod_notification_title">🌤️ 与我们分享你的心情</string>
+    <string name="mod_notification_text">你想用表情符号表达今天的心情吗？</string>
+
+    <!-- 类型/距离 -->
+    <string name="tur_mesafe">类型：%1$s%2$s</string>
+    <string name="mesafe_ek"> - %1$d 米</string>
+    <string name="tamam">确定\n</string>
+
+    <!-- Bottom Navigation -->
+    <string name="bottom_nav_home">主页</string>
+    <string name="bottom_nav_tasks">任务</string>
+    <string name="bottom_nav_settings">个人资料</string>
+    <string name="referral_dialog_title">🎁 输入推荐码</string>
+    <string name="referral_dialog_message">输入朋友提供的推荐码，双方都将获得奖励！</string>
+    <string name="referral_code_hint">在此输入推荐码...</string>
+    <string name="my_referral_code">📋 你的推荐码：%1$s\n（分享给朋友）</string>
+    <string name="btn_use_code">✅ 使用推荐码</string>
+    <string name="btn_cancel">❌ 取消</string>
+    <string name="btn_copy_code">📋 复制推荐码</string>
+    <string name="code_copied">已复制：%1$s</string>
+    <string name="enter_valid_code">请输入有效的推荐码</string>
+    <string name="code_too_short">推荐码太短！至少6个字符</string>
+    <string name="cannot_use_own_code">不能使用自己的推荐码！😄</string>
+    <string name="code_already_used">你已经使用过此推荐码！</string>
+    <string name="invalid_referral_code">❌ 无效的推荐码！</string>
+    <string name="code_check_error">检查推荐码时出错</string>
+    <string name="cannot_use_own_invite">不能使用自己的邀请链接</string>
+    <string name="invite_bonus_inviter">邀请好友成功，奖励+20！🎉</string>
+    <string name="invite_bonus_invited">接受邀请成功，奖励+10！🎁</string>
+    <string name="bonus_added_error">添加奖励时出错</string>
+    <string name="share_invite_text">🎲 SelectifyAI - AI决策助手\n\n📱 下载APK：%1$s\n🌐 官网：%2$s\n\n🎁 通过此链接下载，我们双方都能获得奖励！\n👤 推荐码：%3$s\n\n📋 手动安装步骤：\n1. 下载APK文件\n2. 启用未知来源\n3. 安装APK\n4. 打开应用（自动获得奖励）\n\n#SelectifyAI #人工智能 #决策助手 #安卓</string>
+    <string name="invite_shared_message">邀请信息已分享！\n你的推荐码：%1$s</string>
+    <string name="share_selectify">分享SelectifyAI</string>
+    <string name="invite_friend_btn">邀请好友</string>
+    <string name="enter_code_btn">输入推荐码</string>
+    <!-- Settings Screen -->
+    <string name="logout_success">已退出登录</string>
+    <string name="language_turkish">Türkçe</string>
+    <string name="language_english">English</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_french">Français</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_chinese">中文</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_hindi">हिन्दी</string>
+
+    <!-- Layout Texts -->
+    <string name="dice_question_hint">写下你犹豫不决的事情...</string>
+    <string name="theme_label">主题</string>
+    <string name="language_selection_label">语言选择</string>
+    <string name="logout_button">退出登录</string>
+
+    <!-- AnaEkran Texts -->
+    <string name="weather_indoor_restaurant">由于天气/心情推荐室内餐厅。</string>
+    <string name="weather_indoor_workspace">由于天气/心情推荐图书馆或共享办公空间。</string>
+    <string name="weather_indoor_shopping">由于天气/心情推荐购物中心。</string>
+    <string name="weather_nearby_places">推荐附近的地方。</string>
+    <string name="outdoor_cafes_suggestion">推荐户外咖啡厅。</string>
+    <string name="google_places_error">Google Places 错误: %1$s</string>
+    <string name="user_data_missing">没有用户数据。</string>
+    <string name="user_info_fetch_failed">无法获取用户信息。</string>
+    <string name="unknown_place">未知</string>
+    <string name="unknown_type">未知</string>
+    <string name="restaurant_keyword">餐厅</string>
+    <string name="library_keyword">图书馆</string>
+    <string name="shopping_keyword">购物</string>
+    <string name="place_keyword">地点</string>
+    <string name="a_k">Açık</string>
+    <string name="koyu">Koyu</string>
+
+    <!-- Task Strings -->
+    <string name="add_task">添加任务</string>
+    <string name="no_tasks">没有要完成的任务 🎉</string>
+
+    <!-- ZarAi Activity Strings -->
+    <string name="kalan_hak_placeholder">剩余次数: 10</string>
+    <string name="kalan_hak_format">剩余次数: %1$d</string>
+    <string name="kalan_hak_giris_yapin">剩余次数: 请登录</string>
+    <string name="lutfen_once_giris_yapin">请先登录</string>
+    <string name="hak_kontrolu_yapilamadi">无法检查次数</string>
+    <string name="ek_hak_kazandin">获得 %1$d 次额外机会！</string>
+    <string name="reklam_yuklenemedi">广告加载失败: %1$s</string>
+    <string name="reklam_gosterilemedi">广告显示失败: %1$s</string>
+    <string name="reklam_yukleniyor_bekleyin">广告加载中，请稍候...</string>
+    <string name="secilen_format">选择: %1$s</string>
+    <string name="konum_izni_gerekli_toast">需要位置权限</string>
+    <string name="reklam_izle">观看广告</string>
+    <string name="premiuma_gec">升级到高级版</string>
+    <string name="hak_bitti_mesaj">今日次数已用完</string>
+    <string name="reklam_izle_ek_hak">观看广告 (+2 次)</string>
+
+    <!-- New Prompt Strings -->
+    <string name="hint_type_message1">输入您的消息...</string>
+    <string name="button_send1">发送</string>
+    <string name="delete_day1">删除今天</string>
+    <string name="ai_prompt_secim1">你是一个AI聊天助手。你与用户讨论日常话题。你的回答应该自然、简短且真诚。你可以幽默并给出建议。用户的年龄、心情或责任等信息只应在真正必要且在适当的上下文中简要使用。不要特别反复提醒责任或以咨询的方式使用它们。用中文写作，不要像机器人一样说话。</string>
+    <string name="ai_prompt_evet_hayir1">你是一个AI聊天助手。你给用户是-否的回答，但必要时也可以添加简短的理由。你的回答应该自然、真诚且温暖。如果关于用户的信息（年龄、心情、责任等）非常合适，你可以礼貌地提及，但不要特别反复提醒责任或以施压的方式使用它们。用中文说话，不要像机器人。</string>
+    <string name="ai_system_prompt1">你是一个用真诚、自然且易懂的中文与用户聊天的AI。你可以幽默，必要时表达同理心，并提出建议。只在必要时、适当地且一次性地使用关于用户的信息。与其不断重复和提醒责任，不如保持对话流畅愉快。不要像机器人一样说话。</string>
+
+    <!-- AI Chat Activity Strings -->
+    <string name="ai_chat_title">AI聊天</string>
+    <string name="ai_typing">AI正在输入...</string>
+    <string name="chat_cleared">聊天记录已清除</string>
+    <string name="menu_previous_messages">历史消息</string>
+    <string name="menu_new_message">新消息</string>
+    <string name="menu_clear_chat">清除聊天</string>
+    <string name="menu_settings">设置</string>
+
+    <!-- Hardcode Text Translations -->
+    <string name="sohbet_gecmisi">聊天记录</string>
+    <string name="kullanici_mesaji_placeholder">用户消息将在此显示</string>
+    <string name="ai_yaniti_placeholder">AI回复将在此显示</string>
+    <string name="gunluk_hak_bitti">今日次数已用完</string>
+    <string name="reklam_izle_hak">观看广告 (+2 次)</string>
+    <string name="premiuma_gec_text">升级到高级版</string>
+    <string name="hava_durumu_alinamadi_toast">无法获取天气</string>
+    <string name="ai_format_hatasi">AI格式错误</string>
+    <string name="tum_mesajlari_sil">删除所有消息</string>
+    <string name="bos_baslik">(空标题)</string>
+    <string name="tum_mesajlari_sil_baslik">删除所有消息</string>
+    <string name="tum_mesajlari_sil_mesaj">确定要删除此聊天中的所有消息吗？</string>
+    <string name="evet_button">是</string>
+    <string name="hayir_button">否</string>
+    <string name="tum_mesajlar_silindi">所有消息已删除</string>
+    <string name="mesaji_sil">删除消息</string>
+    <string name="mesaji_sil_onay">确定要删除此消息吗？</string>
+    <string name="bilinmiyor">未知</string>
+    <string name="belirtilmemis">未指定</string>
+    <string name="kullanici_bilgisi_alinamadi">无法获取用户信息。</string>
+    <string name="bilinmiyor_kisa">未知</string>
+    <string name="soru_prefix">问题：</string>
+    <string name="gunluk_groq_limit_doldu">每日Groq限制已满(50)。</string>
+    <string name="groq_hatasi">Groq错误：%1$s</string>
+    <string name="veri_ayristairilamadi">无法解析数据。</string>
+    <string name="google_places_hatasi_toast">Google Places错误：%1$s</string>
+    <string name="chatler_yuklenemedi">无法加载聊天</string>
+    <string name="uzgun_mod">悲伤</string>
+    <string name="yagmur_keyword">雨</string>
+    <string name="kar_keyword">雪</string>
+    <string name="sohbeti_sil">删除聊天</string>
+    <string name="sohbeti_sil_onay">聊天要删除吗？</string>
+
+    <!-- Log Messages -->
+    <string name="admob_baslatiliyor">AdMob初始化中...</string>
+    <string name="admob_baslatildi">AdMob已初始化：%1$s</string>
+    <string name="kullanici_oturum_acmamis">用户未登录</string>
+    <string name="hak_bitti_reklam_panel">次数用完，显示广告/高级版面板</string>
+    <string name="hak_kontrolu_hatasi">次数检查错误：%1$s</string>
+    <string name="ek_hak_eklendi">额外次数已添加：+%1$d，总计：%2$d</string>
+    <string name="hak_ekleme_hatasi">添加次数错误：%1$s</string>
+    <string name="hak_gosterme_hatasi">显示次数错误：%1$s</string>
+    <string name="kalan_hak_log">剩余次数：%1$d</string>
+    <string name="admob_henuz_baslatilmadi">AdMob尚未初始化</string>
+    <string name="reklam_zaten_yukleniyor_log">广告已在加载或准备就绪</string>
+    <string name="rewarded_ad_yukleniyor_log">激励广告加载中...</string>
+    <string name="rewarded_ad_basariyla_yuklendi_log">激励广告加载成功</string>
+    <string name="rewarded_ad_yukleme_hatasi_log">激励广告加载错误：%1$s</string>
+    <string name="hata_kodu_log">错误代码：%1$d</string>
+    <string name="hata_mesaji_log">错误消息：%1$s</string>
+    <string name="rewarded_ad_gosteriliyor_log">激励广告显示中</string>
+    <string name="reklam_tiklandi_log">广告已点击</string>
+    <string name="reklam_kapatildi_log">广告已关闭</string>
+    <string name="reklam_gosterme_hatasi_log_msg">广告显示错误：%1$s</string>
+    <string name="reklam_gosterildi_log">广告已显示</string>
+    <string name="reklam_tam_ekranda_gosterildi_log">广告全屏显示</string>
+    <string name="kullanici_odul_kazandi_log">用户获得奖励：%1$d %2$s</string>
+    <string name="reklam_henuz_hazir_degil_log">广告尚未准备就绪</string>
+    <string name="konum_izni_verildi_log">位置权限已授予</string>
+    <string name="konum_izni_reddedildi_log">位置权限被拒绝</string>
+
+    <!-- Missing strings from Turkish version -->
+    <string name="gunaydin">早上好，%1$s 👋</string>
+    <string name="tunaydin">下午好，%1$s 👋</string>
+    <string name="iyi_aksamlar">晚上好，%1$s 👋</string>
+    <string name="iyi_geceler">晚安，%1$s 👋</string>
+    <string name="chats">聊天</string>
+    <string name="plan_free_features">
+    • 每天1次AI掷骰\n\n• 3次AI聊天权利\n\n• 1次AI地点建议
+</string>
+    <string name="plan_premium_features">
+    • 每天30次AI掷骰\n\n• 50次AI聊天权利\n\n• 无限AI地点建议
+</string>
+    <string name="plan_pro_features">
+    • 无限AI掷骰\n\n• 无限AI聊天\n\n• 无限AI地点建议\n\n• 优先支持服务
+</string>
+    <string name="reklam_zaten_yukleniyor">广告已在加载或准备就绪</string>
+    <string name="rewarded_ad_yukleniyor">激励广告加载中...</string>
+    <string name="rewarded_ad_basariyla_yuklendi">激励广告加载成功</string>
+    <string name="rewarded_ad_yukleme_hatasi">激励广告加载错误：%1$s</string>
+    <string name="hata_kodu">错误代码：%1$d</string>
+    <string name="hata_mesaji">错误消息：%1$s</string>
+    <string name="rewarded_ad_gosteriliyor">激励广告显示中</string>
+    <string name="reklam_tiklandi">广告已点击</string>
+    <string name="reklam_kapatildi">广告已关闭</string>
+    <string name="reklam_gosterme_hatasi_log">广告显示错误：%1$s</string>
+    <string name="reklam_gosterildi">广告已显示</string>
+    <string name="reklam_tam_ekranda_gosterildi">广告全屏显示</string>
+    <string name="kullanici_odul_kazandi">用户获得奖励：%1$d %2$s</string>
+    <string name="reklam_henuz_hazir_degil">广告尚未准备就绪</string>
+    <string name="konum_izni_verildi">位置权限已授予</string>
+    <string name="konum_izni_reddedildi">位置权限被拒绝</string>
+    <string name="hak_sayisi">权利数量\n</string>
+    <string name="purchase_coming_soon">即将推出</string>
+
+    <!-- Hardcoded strings from Java files -->
+    <string name="google_ile_giris_basarisiz">Google 登录失败。</string>
+    <string name="internet_baglantisi_yok">没有网络连接。</string>
+    <string name="google_hesabi_bilgileri_eksik">Google 账户信息不完整。</string>
+    <string name="firebase_kimlik_dogrulama_basarisiz">Firebase 身份验证失败。</string>
+    <string name="kullanici_bilgileri_kontrol_edilemedi">无法验证用户信息。</string>
+    <string name="kullanicilar_koleksiyonu">用户</string>
+    <string name="onboarding_prefs">onboarding_prefs</string>
+    <string name="onboarding_tamamlandi">onboarding_完成</string>
+    <string name="uid">uid</string>
+    <string name="eposta">email</string>
+    <string name="kullanici_adi_field">用户名</string>
+    <string name="kayit_tarihi">注册日期</string>
+    <string name="profil_foto_url">头像URL</string>
+    <string name="onboarding_tamamlandi_field">onboardingTamamlandi</string>
+    <string name="kalan">剩余</string>
+    <string name="zar_hakki">骰子权利</string>
+    <string name="groq_limit">groq_limit</string>
+    <string name="count">计数</string>
+    <string name="premium">premium</string>
+    <string name="chats_collection">chats</string>
+    <string name="messages_collection">消息</string>
+    <string name="message_field">消息</string>
+    <string name="is_user_field">是用户</string>
+    <string name="timestamp_field">时间戳</string>
+    <string name="first_message_field">第一条消息</string>
+    <string name="ayarlar_prefs">设置</string>
+    <string name="koyu_mod">深色模式</string>
+    <string name="dil">语言</string>
+    
+    <!-- Additional hardcoded strings -->
+    <string name="kullanici_kontrol_hatasi">用户验证错误</string>
+    <string name="kimlik_dogrulamada_hata">身份验证错误</string>
+    <string name="meta_llama_model">meta-llama/moonshotai/kimi-k2-instruct</string>
+    <string name="system_role">系统</string>
+    <string name="user_role">用户</string>
+    <string name="content_field">内容</string>
+    <string name="role_field">角色</string>
+    <string name="messages_field">消息</string>
+    <string name="model_field">模型</string>
+    <string name="temperature_field">温度</string>
+    <string name="top_p_field">top_p</string>
+    <string name="choices_field">选择</string>
+    <string name="message_response_field">消息</string>
+    <string name="groq_api_url">https://api.groq.com/openai/v1/chat/completions</string>
+    <string name="authorization_header">Authorization</string>
+    <string name="bearer_prefix">Bearer </string>
+    <string name="content_type_header">Content-Type</string>
+    <string name="application_json">application/json</string>
+    <string name="post_method">POST</string>
+    <string name="get_method">GET</string>
+    <string name="weather_api_url_template" formatted="false">https://api.openweathermap.org/data/2.5/weather?lat=%f&amp;lon=%f&amp;appid=%s&amp;units=metric&amp;lang=tr</string>
+    <string name="main_weather_field">main</string>
+    <string name="temp_field">temp</string>
+    <string name="weather_array_field">天气</string>
+    <string name="think_tag">&lt;think&gt;</string>
+
+    <!-- ZarAiActivity hardcoded strings -->
+    <string name="test_ad_unit_id">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="real_ad_unit_id">ca-app-pub-4497036434463360/9909505336</string>
+    <string name="zar_ai_activity_tag">ZarAiActivity</string>
+    <string name="kullanicilar">kullanicilar</string>
+    <string name="zar_hakki_collection">zar_hakki</string>
+    <string name="groq_limit_collection">groq_limit</string>
+    <string name="yyyy_mm_dd_format">yyyyMMdd</string>
+    <string name="hh_mm_format">HH:mm</string>
+    <string name="dice_image_prefix">dice_</string>
+    <string name="drawable_package">drawable</string>
+    <string name="onboarding_tamamlandi_boolean">onboardingTamamlandi</string>
+
+    <!-- AiChatActivity hardcoded strings -->
+    <string name="main_field">main</string>
+    <string name="weather_field">天气</string>
+    <string name="description_field">描述</string>
+    <string name="kullanici_adi_firestore">kullaniciAdi</string>
+    <string name="yas_field">yas</string>
+    <string name="sorumluluk_field">sorumluluk</string>
+    <string name="user_info_format" formatted="false">\\n用户: %s\\n年龄: %d\\n责任: %s\\n位置: %s/%s\\n天气: %s, %.1f°C</string>
+    <string name="user_info_no_data_format" formatted="false">\\n%s\\n位置: %s/%s\\n天气: %s, %.1f°C</string>
+    <string name="question_mark">?</string>
+    <string name="slash">/</string>
+    <string name="menu_group_chats">1001</string>
+    <string name="empty_string"></string>
+    <string name="user_not_authenticated">用户未认证</string>
+    <string name="no_rights_remaining">没有剩余权利</string>
+    <string name="error_message_prefix">错误: </string>
+    <string name="user_data_could_not_be_retrieved">无法检索用户数据。</string>
+    <string name="data_could_not_be_parsed">无法解析数据。</string>
+    <string name="premium_plan">高级计划</string>
+    <string name="lk_ay_bedava">首月免费！</string>
+    <string name="_29_99_tl_ay">29,99 TL / 月</string>
+    <string name="sat_n_al">购买</string>
+    <string name="cretsiz_plan">免费计划</string>
+    <string name="_79_99_tl_ay">79,99 TL / 月</string>
+    <string name="pro_plan">专业计划</string>
+    <string name="reklam_hazir_degil">广告尚未准备就绪，请重试。</string>
+    <string name="haklar_tukendi">您今天的免费权利已用完。</string>
+    <string name="hak_bilgisi_alinamadi">无法获取权利信息。</string>
+    <string name="groq_limiti_kontrol_edilemedi">无法检查 Groq 限制。</string>
+    <string name="pro">专业</string>
+    <string name="free">免费</string>
+
+    <string name="todo_title">任务</string>
+    <string name="todo_add_hint">添加任务...</string>
+    <string name="todo_add_button">添加</string>
+    <string name="todo_priority_label">优先级</string>
+    <string name="todo_total_count">总任务数: %1$d</string>
+    <string name="todo_no_tasks">没有任务 🎉</string>
+    <string name="todo_delete_content_desc">删除</string>
+    <string-array name="priority_array">
+        <item>高</item>
+        <item>中</item>
+        <item>低</item>
+    </string-array>
+
+    <!-- Todo Search and Filter Strings -->
+
+    <string name="category_label">类别</string>
+    <string name="description_label">描述（可选）</string>
+    <string name="description_hint">任务描述...</string>
+    <string name="task_deleted">任务已删除</string>
+    <string name="undo">撤销</string>
+    <string name="add_button_desc">添加</string>
+    <string name="delete_button_desc">删除</string>
+    <string name="notification_channel_name">任务通知</string>
+    <string name="notification_channel_desc">未完成任务的通知</string>
+    <string name="notification_permission_granted">通知权限已授予</string>
+    <string name="notification_permission_denied">通知权限被拒绝，提醒可能无法工作</string>
+    <string name="priority_high_key">高</string>
+    <string name="priority_medium_key">中</string>
+    <string name="priority_low_key">低</string>
+
+
+   <!-- Todo Dialog Strings -->
+    <string name="notification_time">通知时间</string>
+    <string name="pick_time">%1$s</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="high">高</string>
+    <string name="medium">中</string>
+    <string name="low">低</string>
+    
+    <!-- Todo Search and Filter Strings -->
+    <string name="search_task_hint">搜索任务...</string>
+    <string name="filter_all">全部</string>
+    <string name="filter_pending">待处理</string>
+    <string name="filter_completed">已完成</string>
+    <string name="category_general">一般</string>
+    <string name="category_work">工作</string>
+    <string name="category_personal">个人</string>
+    <string name="category_shopping">购物</string>
+    <string name="category_health">健康</string>
+    <string name="category_education">教育</string>
+    <string name="ai_error_code">Error</string>
+    <string name="gerek_eyi_g_ster">显示原因</string>
+    <string name="arkada_n_davet_et">邀请好友</string>
+    <string name="paylas" />
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/group_main_actions" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_new_chat"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="Yeni Sohbet Başlat" />
+    </group>
+
+    <item android:title="Geçmiş Sohbetler">
+        <menu android:id="@+id/group_previous_chats">
+        </menu>
+    </item>
+</menu>
